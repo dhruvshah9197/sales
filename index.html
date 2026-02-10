@@ -1,831 +1,815 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruvin Shah | Senior Sales Executive | Helsinki</title>
+    <meta name="description" content="Senior Sales Executive with 9+ years experience in B2B sales, market expansion, and complex deal closing. Based in Helsinki, Finland.">
+    <meta property="og:image" content="IMG_5469.jpg">
+    
+    <!-- Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configuration for Tailwind to match specific colors -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        primary: {
+                            DEFAULT: '#2563EB', // Professional Blue
+                            dark: '#3B82F6',
+                        },
+                        secondary: {
+                            DEFAULT: '#059669', // Forest Green
+                            dark: '#10B981',
+                        },
+                        bg: {
+                            light: '#FAFAFA', // Warm White
+                            dark: '#0F0F0F',  // Deep Charcoal
+                        },
+                        surface: {
+                            light: '#FFFFFF',
+                            dark: '#1A1A1A',
+                        },
+                        text: {
+                            primary: '#1A1A1A',
+                            secondary: '#525252',
+                            inverse: '#F5F5F5',
+                            inverseSecondary: '#A3A3A3',
+                        }
+                    },
+                    spacing: {
+                        'section-desktop': '96px',
+                        'section-mobile': '64px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Utilities */
+        body {
+            background-color: #FAFAFA;
+            color: #1A1A1A;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .dark body {
+            background-color: #0F0F0F;
+            color: #F5F5F5;
+        }
+
+        /* Scrollbar Styling */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #E5E5E5;
+            border-radius: 4px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+
+        /* Animations */
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        /* Modal Transitions */
+        .modal {
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+        .modal-content {
+            transition: transform 0.3s ease;
+        }
+        .modal.hidden {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .modal.hidden .modal-content {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
-<body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en" class="scroll-smooth"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Dhruvin Shah | Senior Sales Executive | Helsinki&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="description" content="Senior Sales Executive with 9+ years experience in B2B sales, market expansion, and complex deal closing. Based in Helsinki, Finland."&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta property="og:image" content="IMG_5469.jpg"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Fonts: Inter &amp; JetBrains Mono --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.googleapis.com"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link rel="preconnect" href="https://fonts.gstatic.com" crossorigin&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Tailwind CSS --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script src="https://cdn.tailwindcss.com"&gt;&lt;/script&gt;</p>
-<p class="p2"><span class="Apple-converted-space">    </span></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Configuration for Tailwind to match specific colors --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>tailwind.config = {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>darkMode: 'class',</p>
-<p class="p1"><span class="Apple-converted-space">            </span>theme: {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>extend: {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>fontFamily: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>sans: ['Inter', 'sans-serif'],</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>mono: ['JetBrains Mono', 'monospace'],</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>colors: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>primary: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>DEFAULT: '#2563EB', // Professional Blue</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>dark: '#3B82F6',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>secondary: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>DEFAULT: '#059669', // Forest Green</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>dark: '#10B981',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>bg: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>light: '#FAFAFA', // Warm White</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>dark: '#0F0F0F',<span class="Apple-converted-space">  </span>// Deep Charcoal</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>surface: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>light: '#FFFFFF',</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>dark: '#1A1A1A',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>text: {</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>primary: '#1A1A1A',</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>secondary: '#525252',</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>inverse: '#F5F5F5',</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>inverseSecondary: '#A3A3A3',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>},</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>spacing: {</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>'section-desktop': '96px',</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>'section-mobile': '64px',</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>}</p>
-<p class="p1"><span class="Apple-converted-space">                </span>}</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Custom Utilities */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #FAFAFA;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #1A1A1A;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: background-color 0.3s ease, color 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.dark body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #0F0F0F;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #F5F5F5;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Scrollbar Styling */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-track {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: transparent;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>::-webkit-scrollbar-thumb {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #E5E5E5;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 4px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.dark ::-webkit-scrollbar-thumb {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Animations */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.fade-in-up {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>animation: fadeInUp 0.8s ease-out forwards;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: translateY(20px);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>@keyframes fadeInUp {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>to {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>opacity: 1;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>transform: translateY(0);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>.delay-100 { animation-delay: 100ms; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.delay-200 { animation-delay: 200ms; }</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.delay-300 { animation-delay: 300ms; }</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* Modal Transitions */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.modal {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: opacity 0.3s ease, visibility 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.modal-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transition: transform 0.3s ease;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.modal.hidden {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>opacity: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>visibility: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>pointer-events: none;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.modal.hidden .modal-content {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>transform: scale(0.95);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body class="antialiased selection:bg-primary selection:text-white"&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Navigation --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-bg-light/85 dark:bg-bg-dark/85 backdrop-blur-md border-b border-transparent"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1200px] mx-auto px-6 h-[72px] flex items-center justify-between"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;a href="#" class="font-bold text-xl tracking-tight text-text-primary dark:text-white"&gt;DS&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="hidden md:flex items-center space-x-8 text-[16px] font-medium text-text-secondary dark:text-text-inverseSecondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#about" class="hover:text-primary dark:hover:text-primary-dark transition-colors"&gt;About&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#experience" class="hover:text-primary dark:hover:text-primary-dark transition-colors"&gt;Experience&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#case-studies" class="hover:text-primary dark:hover:text-primary-dark transition-colors"&gt;Case Studies&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#contact" class="hover:text-primary dark:hover:text-primary-dark transition-colors"&gt;Contact&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Dark Mode Toggle --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Dark Mode"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Sun Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-5 h-5 hidden dark:block text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Moon Icon --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;svg class="w-5 h-5 block dark:hidden text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 24.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/nav&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Hero Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="min-h-screen flex items-center justify-center px-6 relative pt-20"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1200px] mx-auto text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h1 class="text-[36px] md:text-[56px] font-bold text-text-primary dark:text-white mb-4 fade-in-up"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Dhruvin Shah</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/h1&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-[20px] md:text-[24px] text-text-secondary dark:text-text-inverseSecondary font-medium mb-6 fade-in-up delay-100"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Senior Sales Executive | New Business Hunter</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-[16px] md:text-[18px] text-text-secondary dark:text-text-inverseSecondary mb-10 max-w-2xl mx-auto leading-relaxed fade-in-up delay-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Opening new markets and closing complex B2B deals in regulated industries. Transitioning financial services expertise to Nordic SaaS growth.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-300"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#case-studies" class="w-full sm:w-auto px-8 py-3.5 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>View Case Studies</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="w-full sm:w-auto px-8 py-3.5 border-2 border-primary text-primary dark:text-primary-dark dark:border-primary-dark font-medium rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary-dark dark:hover:text-white transition-all duration-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Download CV</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">        </span></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;!-- Scroll Indicator --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-text-secondary dark:text-text-inverseSecondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- About Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="about" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Photo Column --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:col-span-5 flex justify-center md:justify-start"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative group"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="absolute -inset-2 bg-gradient-to-tr from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"&gt;&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Using Uploaded Image: IMG_5469.jpg --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;img src="IMG_5469.jpg"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                         </span>onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Dhruvin+Shah&amp;background=2563EB&amp;color=fff&amp;size=400';"</p>
-<p class="p1"><span class="Apple-converted-space">                         </span>alt="Dhruvin Shah Professional Headshot"<span class="Apple-converted-space"> </span></p>
-<p class="p1"><span class="Apple-converted-space">                         </span>class="relative w-[300px] h-[375px] md:w-[400px] md:h-[500px] object-cover rounded-2xl shadow-xl transition duration-500 border-2 border-white dark:border-gray-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Content Column --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="md:col-span-7"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-[28px] md:text-[36px] font-bold mb-6 text-text-primary dark:text-white"&gt;About Me&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="prose dark:prose-invert text-[18px] text-text-secondary dark:text-text-inverseSecondary leading-relaxed space-y-4 mb-10"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Senior Sales Executive with 9 years of experience opening new markets and closing complex B2B deals. I specialize in full-cycle sales: self-sourcing leads, navigating multi-stakeholder negotiations, and delivering net-new revenue.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>My background in highly regulated US Financial Services (FINRA/SEC) has equipped me to sell effectively to Legal, Procurement, and C-Level stakeholders. I now bring this "Hunter" expertise to the Nordic SaaS space, where I excel at consultative selling and pipeline management.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Currently based in Helsinki, I'm actively seeking opportunities in B2B SaaS sales where I can drive market expansion.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Stats Grid --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-gray-100 dark:border-gray-800 pt-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight"&gt;600+&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider"&gt;Net New Logos&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight"&gt;14&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider"&gt;US States Launched&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight"&gt;$50M+&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider"&gt;Portfolio Built&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Core Competencies (Brief) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-16 px-6 bg-bg-light dark:bg-bg-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1000px] mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white"&gt;New Business Hunter&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-text-secondary dark:text-text-inverseSecondary"&gt;Proven track record of self-sourcing and closing greenfield deals.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white"&gt;Complex Deals&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-text-secondary dark:text-text-inverseSecondary"&gt;Experience navigating Legal, Procurement &amp; C-Level stakeholders.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white"&gt;Market Expansion&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-text-secondary dark:text-text-inverseSecondary"&gt;Launching sales operations in new territories from scratch.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white"&gt;RevOps Discipline&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm text-text-secondary dark:text-text-inverseSecondary"&gt;CRM hygiene (Salesforce/HubSpot) and accurate forecasting.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Professional Experience --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="experience" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1000px] mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-[28px] md:text-[36px] font-bold mb-12 text-text-primary dark:text-white"&gt;Professional Experience&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-12 border-l-2 border-gray-100 dark:border-gray-800 ml-4 pl-8 md:ml-0 md:pl-0"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Role 1 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative md:grid md:grid-cols-12 md:gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Timeline Dot --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-surface-dark"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-5 md:text-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider"&gt;May 2019 – Nov 2025&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white"&gt;Transamerica Financial Advisers&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary dark:text-primary-dark font-medium"&gt;Senior Marketing Director&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-7 mt-4 md:mt-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Personally sourced and closed &lt;span class="text-secondary dark:text-secondary-dark font-semibold"&gt;600+ net new commercial relationships&lt;/span&gt; over 6 years through cold outbound.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Led expansion into the Government/Defense vertical, securing landmark National Guard contracts.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Implemented RevOps best practices to track deal velocity and ensure accurate forecasting.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Role 2 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative md:grid md:grid-cols-12 md:gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Timeline Dot --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gray-200 dark:bg-gray-700 border-4 border-white dark:border-surface-dark"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-5 md:text-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider"&gt;Mar 2017 – May 2019&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white"&gt;Transamerica Financial Advisers&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary dark:text-primary-dark font-medium"&gt;Marketing Director / Financial Advisor&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-7 mt-4 md:mt-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Built a book of business from scratch in a new territory, scaling from 0 to 300+ clients in 24 months.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Developed a "Risk &amp; Control" consultative sales methodology mirroring SaaS value selling.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Role 3 --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="relative md:grid md:grid-cols-12 md:gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;!-- Timeline Dot --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gray-200 dark:bg-gray-700 border-4 border-white dark:border-surface-dark"&gt;&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-5 md:text-right"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider"&gt;Oct 2016 – Mar 2017&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white"&gt;Transamerica Financial Advisers&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="text-primary dark:text-primary-dark font-medium"&gt;Licensed Financial Associate&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                    </span></p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="md:col-span-7 mt-4 md:mt-0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Achieved an &lt;span class="text-secondary dark:text-secondary-dark font-semibold"&gt;85% conversion rate&lt;/span&gt; from prospect to client during first 6 months.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Case Studies Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="case-studies" class="py-section-mobile md:py-section-desktop px-6 bg-bg-light dark:bg-bg-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1200px] mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="max-w-2xl mx-auto text-center mb-16"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;h2 class="text-[28px] md:text-[36px] font-bold mb-4 text-text-primary dark:text-white"&gt;Sales Case Studies&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>Real examples of complex deals I've sourced, negotiated, and closed. Demonstrating the ability to navigate multi-stakeholder cycles in challenging markets.</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-8"&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 1: National Guard --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer" onclick="openModal('modal-guard')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-primary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors"&gt;US National Guard Contract&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary"&gt;Government / Defense&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Opening a new vertical by navigating complex procurement cycles and compliance requirements. Overcame "black box" procurement challenges to secure a landmark contract.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center justify-between mt-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm"&gt;8-month cycle&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>Read Case Study &lt;svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 2: 14 State Expansion --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer" onclick="openModal('modal-expansion')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-secondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors"&gt;14-State Territory Launch&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary"&gt;Scale &amp; Operations&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Scaled sales operations from a single territory to 14 US states with no existing brand presence. Built a $50M portfolio from scratch using RevOps discipline.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center justify-between mt-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm"&gt;600+ New Logos&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>Read Case Study &lt;svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Card 3: RevOps Excellence (NEW) --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer md:col-span-2 lg:col-span-1" onclick="openModal('modal-revops')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center gap-3 mb-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-purple-600 dark:text-purple-400"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors"&gt;RevOps: Building a Sales Machine&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary"&gt;Technology &amp; Process&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>Transformed a chaotic sales process into a data-driven, scalable system. Utilized Salesforce, ZoomInfo, and LinkedIn Sales Navigator to drive 100% pipeline visibility.</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex items-center justify-between mt-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm"&gt;95% Forecast Accuracy&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>View Tech Stack &lt;svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Skills &amp; Tools --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1000px] mx-auto"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-[28px] md:text-[36px] font-bold mb-12 text-text-primary dark:text-white"&gt;Skills &amp; Tools&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-1 md:grid-cols-2 gap-12"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Sales Skills --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-6 border-b border-gray-100 dark:border-gray-800 pb-2 text-text-primary dark:text-white"&gt;Sales Expertise&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;New Business Development&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Greenfield Market Expansion&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Pipeline Management &amp; Forecasting&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Consultative / Value-Based Selling&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Multi-Stakeholder Negotiation&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;!-- Tech Tools --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-xl font-bold mb-6 border-b border-gray-100 dark:border-gray-800 pb-2 text-text-primary dark:text-white"&gt;Technology &amp; Languages&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="mb-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-medium text-text-primary dark:text-white mb-3"&gt;Stack&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"&gt;&lt;/path&gt;&lt;/svg&gt;Salesforce (Certified AI Specialist)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"&gt;&lt;/path&gt;&lt;/svg&gt;HubSpot CRM&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-center"&gt;&lt;svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"&gt;&lt;/path&gt;&lt;/svg&gt;LinkedIn Sales Navigator &amp; ZoomInfo&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="font-medium text-text-primary dark:text-white mb-3"&gt;Languages&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;English (Native)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;Hindi (Native)&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li class="flex items-center text-primary dark:text-primary-dark font-medium"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>&lt;span class="w-2 h-2 rounded-full bg-primary mr-2"&gt;&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                                </span>Finnish (A1 - Basics / Actively Studying)</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- References Placeholder --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section class="py-16 px-6 bg-bg-light dark:bg-bg-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[800px] mx-auto text-center border-t border-b border-gray-200 dark:border-gray-800 py-12"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-2xl font-bold mb-4 text-text-primary dark:text-white"&gt;Professional References&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Available upon request. I can provide detailed contact information for former managers and clients who can attest to my sales performance and consultative approach.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="inline-block px-6 py-3 bg-white dark:bg-surface-dark rounded-full border border-gray-200 dark:border-gray-700 italic text-text-secondary dark:text-text-inverseSecondary text-sm"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>"Dhruvin combines aggressive prospecting with the discipline of Revenue Operations."</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Contact Section --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;section id="contact" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[600px] mx-auto text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-[28px] md:text-[36px] font-bold mb-4 text-text-primary dark:text-white"&gt;Let's Talk&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-10"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Interested in discussing new business opportunities? I'm currently based in Helsinki and open to roles across Finland.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="mailto:dhruvshah9197@gmail.com" class="block w-full p-4 rounded-xl border-2 border-primary text-primary dark:text-primary-dark font-bold text-lg hover:bg-primary hover:text-white transition-all duration-200"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>dhruvshah9197@gmail.com</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/a&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col sm:flex-row gap-4 justify-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="tel:+358466658714" class="px-6 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 text-text-secondary dark:text-text-inverseSecondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>+358 466 658 714</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;a href="#" class="px-6 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 text-text-secondary dark:text-text-inverseSecondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>LinkedIn Profile</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/section&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Footer --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;footer class="py-12 px-6 bg-surface-dark text-white border-t border-gray-800"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-sm text-gray-400"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>© 2026 Dhruvin Shah | Senior Sales Executive</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="flex items-center gap-6 text-sm font-medium"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="#" class="hover:text-primary transition-colors"&gt;Download CV&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;a href="mailto:dhruvshah9197@gmail.com" class="hover:text-primary transition-colors"&gt;Contact&lt;/a&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="text-xs text-gray-500"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Built with Nordic Minimalism | Helsinki, Finland</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/footer&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- MODALS --&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Modal 1: National Guard --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="modal-guard" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-guard')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeModal('modal-guard')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-primary dark:text-primary-dark font-mono text-sm uppercase tracking-wider mb-2 block"&gt;Government / Defense&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white"&gt;US National Guard Contract&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;The Challenge&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;The US National Guard presented a unique opportunity to expand into the Government/Defense vertical—a market with zero brand recognition for our services. We faced a "black box" procurement cycle with heavy resistance from Legal, Security, and Finance teams.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;Strategic Approach&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-5 space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Value Translation:&lt;/strong&gt; Translated complex FINRA regulations into clear business-value frameworks for government context.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Stakeholder Mapping:&lt;/strong&gt; Identified and aligned key decision-makers across procurement and JAG (Judge Advocate General).&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Direct Engagement:&lt;/strong&gt; Personally facilitated every security review session to ensure internal compliance aligned with government auditors.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;Results &amp; Impact&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center text-secondary dark:text-secondary-dark font-medium"&gt;&lt;svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Secured landmark multi-year contract&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center text-secondary dark:text-secondary-dark font-medium"&gt;&lt;svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Established repeatable playbook for defense-sector expansion&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg border-l-4 border-red-500"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2"&gt;Key Learning (Honesty)&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;"I initially underestimated the security audit timeline by 4 months, nearly stalling the deal. I learned to build a mandatory 30% 'compliance buffer' into all government sales cycles moving forward."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Modal 2: Expansion --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="modal-expansion" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-expansion')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeModal('modal-expansion')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-primary dark:text-primary-dark font-mono text-sm uppercase tracking-wider mb-2 block"&gt;Scale &amp; Operations&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white"&gt;14-State Territory Launch&lt;/h2&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;The Challenge&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p&gt;Tasked with scaling sales operations from a single territory (California) to 14 US states with no existing brand presence. Prospects in the Midwest had zero awareness of our West Coast successes, and regulatory environments varied by state.&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">                </span></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;Strategic Approach&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="list-disc ml-5 space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Risk &amp; Control Pivot:&lt;/strong&gt; Shifted from feature-selling to a consultative model focusing on regional regulatory compliance as the primary trust builder.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;RevOps Implementation:&lt;/strong&gt; Enforced strict CRM hygiene to track deal velocity across disparate territories.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li&gt;&lt;strong&gt;Localized Vernacular:&lt;/strong&gt; Adapted sales scripts to match regional business languages.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white mb-2"&gt;Results &amp; Impact&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;ul class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center text-secondary dark:text-secondary-dark font-medium"&gt;&lt;svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Captured 600+ net new logos&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;li class="flex items-center text-secondary dark:text-secondary-dark font-medium"&gt;&lt;svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"&gt;&lt;/path&gt;&lt;/svg&gt;Scaled AUM from $0 to $50M+ in under 6 years&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg border-l-4 border-red-500"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;h3 class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2"&gt;Key Learning (Honesty)&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;p class="text-sm italic"&gt;"In the first two states, I used California scripts. They failed. I realized 'Expansion' requires translation. I spent 3 weeks shadowing local brokers to learn regional vernacular before securing our first win."&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Modal 3: RevOps Excellence --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="modal-revops" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-revops')"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[900px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;button onclick="closeModal('modal-revops')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"&gt;&lt;path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"&gt;&lt;/path&gt;&lt;/svg&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/button&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;span class="text-purple-600 dark:text-purple-400 font-mono text-sm uppercase tracking-wider mb-2 block"&gt;Technology &amp; Process&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;h2 class="text-3xl font-bold mb-4 text-text-primary dark:text-white"&gt;RevOps Excellence: Full Sales Cycle&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;p class="text-text-secondary dark:text-text-inverseSecondary mb-8 max-w-2xl"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>Demonstrating technical proficiency across the entire sales lifecycle. Transforming manual processes into a predictable, data-driven revenue engine.</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Key Results Highlight --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-2xl font-bold text-secondary dark:text-secondary-dark"&gt;95%&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1"&gt;Forecast Accuracy&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-2xl font-bold text-secondary dark:text-secondary-dark"&gt;10+ Hrs&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1"&gt;Saved Weekly&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-2xl font-bold text-secondary dark:text-secondary-dark"&gt;92%&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1"&gt;Retention Rate&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-2xl font-bold text-secondary dark:text-secondary-dark"&gt;35%&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1"&gt;Upsell Rate&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Interactive Tabs --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="mb-8 border-b border-gray-200 dark:border-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-wrap gap-2 md:gap-8" role="tablist"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="tab-btn active pb-3 border-b-2 border-primary text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('prospecting', this)"&gt;1. Prospecting&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('discovery', this)"&gt;2. Discovery&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('closing', this)"&gt;3. Closing&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('handoff', this)"&gt;4. Handoff&lt;/button&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Tab Content: Prospecting --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="prospecting" class="tab-content block animate-fade-in"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;div class="flex flex-col md:flex-row gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white"&gt;Lead Generation &amp; Outreach&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Account Research:&lt;/strong&gt; Used &lt;span class="text-primary font-medium"&gt;LinkedIn Sales Navigator&lt;/span&gt; to identify decision-makers in 200+ high-fit mid-market accounts.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Enrichment:&lt;/strong&gt; Leveraged &lt;span class="text-primary font-medium"&gt;ZoomInfo&lt;/span&gt; for direct dials, achieving 60% contact accuracy.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Cadence:&lt;/strong&gt; Executed multi-channel outreach (Email, Phone, LinkedIn) logged automatically in &lt;span class="text-primary font-medium"&gt;Salesforce&lt;/span&gt;.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-blue-700 dark:text-blue-300 text-sm"&gt;Outcome:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-blue-600 dark:text-blue-400 text-sm"&gt; 200 new leads/month with 15% conversion to Opportunity.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xs font-bold uppercase text-gray-400 mb-4"&gt;Tech Stack&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-blue-500 rounded-full mr-2"&gt;&lt;/span&gt;LinkedIn Sales Nav&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-blue-500 rounded-full mr-2"&gt;&lt;/span&gt;ZoomInfo&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-blue-500 rounded-full mr-2"&gt;&lt;/span&gt;Salesforce CRM&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-blue-500 rounded-full mr-2"&gt;&lt;/span&gt;Calendly&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Tab Content: Discovery --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="discovery" class="tab-content hidden animate-fade-in"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>&lt;div class="flex flex-col md:flex-row gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white"&gt;Needs Analysis &amp; Solution&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Framework:&lt;/strong&gt; Utilized &lt;span class="text-primary font-medium"&gt;MEDDIC + BANT&lt;/span&gt; hybrid to qualify budget, authority, and pain points during Zoom calls.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Forecasting:&lt;/strong&gt; Immediate opportunity creation in Salesforce with probability weighting based on qualification criteria.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Presentation:&lt;/strong&gt; Delivered custom slide decks addressing specific discovery pain points, tracking ROI calculations.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-blue-700 dark:text-blue-300 text-sm"&gt;Outcome:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-blue-600 dark:text-blue-400 text-sm"&gt; 85% discovery completion rate and 60% conversion to qualified pipeline.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xs font-bold uppercase text-gray-400 mb-4"&gt;Tech Stack&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"&gt;&lt;/span&gt;Zoom / Teams&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"&gt;&lt;/span&gt;Salesforce Notes&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"&gt;&lt;/span&gt;Google Slides&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Tab Content: Closing --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="closing" class="tab-content hidden animate-fade-in"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>&lt;div class="flex flex-col md:flex-row gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white"&gt;Negotiation &amp; Contract&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Proposal:&lt;/strong&gt; Generated formal quotes in Salesforce with automated approval routing for discounts.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Negotiation:&lt;/strong&gt; Tracked every stakeholder concern (Legal, Procurement, IT) in CRM to ensure deal velocity.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Execution:&lt;/strong&gt; Managed e-signatures via &lt;span class="text-primary font-medium"&gt;DocuSign&lt;/span&gt;, reducing admin time by 3 days.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-blue-700 dark:text-blue-300 text-sm"&gt;Outcome:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-blue-600 dark:text-blue-400 text-sm"&gt; 60% close rate with a 45-day average sales cycle (Mid-Market).&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xs font-bold uppercase text-gray-400 mb-4"&gt;Tech Stack&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-green-500 rounded-full mr-2"&gt;&lt;/span&gt;DocuSign&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-green-500 rounded-full mr-2"&gt;&lt;/span&gt;Salesforce Quotes&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-green-500 rounded-full mr-2"&gt;&lt;/span&gt;Slack (Internal)&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;!-- Tab Content: Handoff --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;div id="handoff" class="tab-content hidden animate-fade-in"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                 </span>&lt;div class="flex flex-col md:flex-row gap-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="flex-1 space-y-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h3 class="text-lg font-bold text-text-primary dark:text-white"&gt;Customer Success Transfer&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Structure:&lt;/strong&gt; Conducted formal 30-minute handoff calls with CS team, transferring all discovery notes and success criteria.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Documentation:&lt;/strong&gt; Uploaded signed contracts and implementation timelines to Salesforce files for single-source-of-truth.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;li&gt;&lt;strong&gt;Lifecycle:&lt;/strong&gt; Maintained relationship for QBRs, driving a 35% upsell rate in year 1.&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="font-bold text-blue-700 dark:text-blue-300 text-sm"&gt;Outcome:&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;span class="text-blue-600 dark:text-blue-400 text-sm"&gt; 92% retention rate (vs 75% industry avg) and zero "lost in translation" errors.&lt;/span&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;h4 class="text-xs font-bold uppercase text-gray-400 mb-4"&gt;Tech Stack&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;div class="space-y-2"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-purple-500 rounded-full mr-2"&gt;&lt;/span&gt;Salesforce Files&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-purple-500 rounded-full mr-2"&gt;&lt;/span&gt;Asana / Monday&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                            </span>&lt;div class="flex items-center text-sm font-medium"&gt;&lt;span class="w-2 h-2 bg-purple-500 rounded-full mr-2"&gt;&lt;/span&gt;CS Platform&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">                </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;!-- Scripts --&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Modal Logic</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function openModal(modalId) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const modal = document.getElementById(modalId);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.body.style.overflow = 'hidden'; // Prevent scrolling</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>function closeModal(modalId) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const modal = document.getElementById(modalId);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>modal.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.body.style.overflow = ''; // Restore scrolling</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Close modal on Escape key</p>
-<p class="p1"><span class="Apple-converted-space">        </span>document.addEventListener('keydown', function(event) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (event.key === "Escape") {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.querySelectorAll('.modal').forEach(modal =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                    </span>modal.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>});</p>
-<p class="p1"><span class="Apple-converted-space">                </span>document.body.style.overflow = '';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Tab Switcher Logic</p>
-<p class="p1"><span class="Apple-converted-space">        </span>function switchTab(tabId, btnElement) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Hide all tab content</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.tab-content').forEach(content =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>content.classList.add('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>content.classList.remove('block');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Show selected tab content</p>
-<p class="p1"><span class="Apple-converted-space">            </span>const selectedTab = document.getElementById(tabId);</p>
-<p class="p1"><span class="Apple-converted-space">            </span>selectedTab.classList.remove('hidden');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>selectedTab.classList.add('block');</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Reset all button styles</p>
-<p class="p1"><span class="Apple-converted-space">            </span>document.querySelectorAll('.tab-btn').forEach(btn =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.remove('active', 'border-primary', 'text-primary');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>btn.classList.add('border-transparent', 'text-text-secondary');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>});</p>
-<p class="p2"><span class="Apple-converted-space">            </span></p>
-<p class="p1"><span class="Apple-converted-space">            </span>// Set active button style</p>
-<p class="p1"><span class="Apple-converted-space">            </span>btnElement.classList.remove('border-transparent', 'text-text-secondary');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>btnElement.classList.add('active', 'border-primary', 'text-primary');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Dark Mode Logic</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const themeToggle = document.getElementById('theme-toggle');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const html = document.documentElement;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Check local storage or system preference</p>
-<p class="p1"><span class="Apple-converted-space">        </span>if (localStorage.theme === 'dark' || (!('theme' in localStorage) &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)) {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>html.classList.add('dark');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>html.classList.remove('dark');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>themeToggle.addEventListener('click', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (html.classList.contains('dark')) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>html.classList.remove('dark');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>localStorage.theme = 'light';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>html.classList.add('dark');</p>
-<p class="p1"><span class="Apple-converted-space">                </span>localStorage.theme = 'dark';</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>// Navbar Scroll Effect</p>
-<p class="p1"><span class="Apple-converted-space">        </span>const navbar = document.getElementById('navbar');</p>
-<p class="p1"><span class="Apple-converted-space">        </span>window.addEventListener('scroll', () =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>if (window.scrollY &gt; 50) {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>navbar.classList.add('shadow-sm');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>} else {</p>
-<p class="p1"><span class="Apple-converted-space">                </span>navbar.classList.remove('shadow-sm');</p>
-<p class="p1"><span class="Apple-converted-space">            </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>});</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<body class="antialiased selection:bg-primary selection:text-white">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-bg-light/85 dark:bg-bg-dark/85 backdrop-blur-md border-b border-transparent">
+        <div class="max-w-[1200px] mx-auto px-6 h-[72px] flex items-center justify-between">
+            <a href="#" class="font-bold text-xl tracking-tight text-text-primary dark:text-white">DS</a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-[16px] font-medium text-text-secondary dark:text-text-inverseSecondary">
+                <a href="#about" class="hover:text-primary dark:hover:text-primary-dark transition-colors">About</a>
+                <a href="#experience" class="hover:text-primary dark:hover:text-primary-dark transition-colors">Experience</a>
+                <a href="#case-studies" class="hover:text-primary dark:hover:text-primary-dark transition-colors">Case Studies</a>
+                <a href="#contact" class="hover:text-primary dark:hover:text-primary-dark transition-colors">Contact</a>
+                
+                <!-- Dark Mode Toggle -->
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors" aria-label="Toggle Dark Mode">
+                    <!-- Sun Icon -->
+                    <svg class="w-5 h-5 hidden dark:block text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    <!-- Moon Icon -->
+                    <svg class="w-5 h-5 block dark:hidden text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 24.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center px-6 relative pt-20">
+        <div class="max-w-[1200px] mx-auto text-center">
+            <h1 class="text-[36px] md:text-[56px] font-bold text-text-primary dark:text-white mb-4 fade-in-up">
+                Dhruvin Shah
+            </h1>
+            <p class="text-[20px] md:text-[24px] text-text-secondary dark:text-text-inverseSecondary font-medium mb-6 fade-in-up delay-100">
+                Senior Sales Executive | New Business Hunter
+            </p>
+            <p class="text-[16px] md:text-[18px] text-text-secondary dark:text-text-inverseSecondary mb-10 max-w-2xl mx-auto leading-relaxed fade-in-up delay-200">
+                Opening new markets and closing complex B2B deals in regulated industries. Transitioning financial services expertise to Nordic SaaS growth.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-300">
+                <a href="#case-studies" class="w-full sm:w-auto px-8 py-3.5 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg transition-all duration-200 shadow-sm hover:shadow-md hover:-translate-y-0.5">
+                    View Case Studies
+                </a>
+                <a href="#" class="w-full sm:w-auto px-8 py-3.5 border-2 border-primary text-primary dark:text-primary-dark dark:border-primary-dark font-medium rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary-dark dark:hover:text-white transition-all duration-200">
+                    Download CV
+                </a>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-text-secondary dark:text-text-inverseSecondary">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors">
+        <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+            <!-- Photo Column -->
+            <div class="md:col-span-5 flex justify-center md:justify-start">
+                <div class="relative group">
+                    <div class="absolute -inset-2 bg-gradient-to-tr from-primary to-secondary rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
+                    <!-- Using Uploaded Image: IMG_5469.jpg -->
+                    <img src="IMG_5469.jpg" 
+                         onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Dhruvin+Shah&background=2563EB&color=fff&size=400';"
+                         alt="Dhruvin Shah Professional Headshot" 
+                         class="relative w-[300px] h-[375px] md:w-[400px] md:h-[500px] object-cover rounded-2xl shadow-xl transition duration-500 border-2 border-white dark:border-gray-800">
+                </div>
+            </div>
+
+            <!-- Content Column -->
+            <div class="md:col-span-7">
+                <h2 class="text-[28px] md:text-[36px] font-bold mb-6 text-text-primary dark:text-white">About Me</h2>
+                <div class="prose dark:prose-invert text-[18px] text-text-secondary dark:text-text-inverseSecondary leading-relaxed space-y-4 mb-10">
+                    <p>
+                        Senior Sales Executive with 9 years of experience opening new markets and closing complex B2B deals. I specialize in full-cycle sales: self-sourcing leads, navigating multi-stakeholder negotiations, and delivering net-new revenue.
+                    </p>
+                    <p>
+                        My background in highly regulated US Financial Services (FINRA/SEC) has equipped me to sell effectively to Legal, Procurement, and C-Level stakeholders. I now bring this "Hunter" expertise to the Nordic SaaS space, where I excel at consultative selling and pipeline management.
+                    </p>
+                    <p>
+                        Currently based in Helsinki, I'm actively seeking opportunities in B2B SaaS sales where I can drive market expansion.
+                    </p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-gray-100 dark:border-gray-800 pt-8">
+                    <div>
+                        <div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight">600+</div>
+                        <div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider">Net New Logos</div>
+                    </div>
+                    <div>
+                        <div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight">14</div>
+                        <div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider">US States Launched</div>
+                    </div>
+                    <div>
+                        <div class="text-[36px] md:text-[48px] font-bold text-secondary dark:text-secondary-dark leading-tight">$50M+</div>
+                        <div class="text-[14px] text-text-secondary dark:text-text-inverseSecondary font-medium uppercase tracking-wider">Portfolio Built</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies (Brief) -->
+    <section class="py-16 px-6 bg-bg-light dark:bg-bg-dark transition-colors">
+        <div class="max-w-[1000px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white">New Business Hunter</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary">Proven track record of self-sourcing and closing greenfield deals.</p>
+                </div>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white">Complex Deals</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary">Experience navigating Legal, Procurement & C-Level stakeholders.</p>
+                </div>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white">Market Expansion</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary">Launching sales operations in new territories from scratch.</p>
+                </div>
+                <div class="bg-white dark:bg-surface-dark p-6 rounded-xl border border-gray-100 dark:border-gray-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-semibold text-lg mb-2 text-text-primary dark:text-white">RevOps Discipline</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary">CRM hygiene (Salesforce/HubSpot) and accurate forecasting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors">
+        <div class="max-w-[1000px] mx-auto">
+            <h2 class="text-[28px] md:text-[36px] font-bold mb-12 text-text-primary dark:text-white">Professional Experience</h2>
+            
+            <div class="space-y-12 border-l-2 border-gray-100 dark:border-gray-800 ml-4 pl-8 md:ml-0 md:pl-0">
+                
+                <!-- Role 1 -->
+                <div class="relative md:grid md:grid-cols-12 md:gap-8">
+                    <!-- Timeline Dot -->
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-primary border-4 border-white dark:border-surface-dark"></div>
+                    
+                    <div class="md:col-span-5 md:text-right">
+                        <span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider">May 2019 – Nov 2025</span>
+                        <h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white">Transamerica Financial Advisers</h3>
+                        <div class="text-primary dark:text-primary-dark font-medium">Senior Marketing Director</div>
+                    </div>
+                    
+                    <div class="md:col-span-7 mt-4 md:mt-0">
+                        <ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4">
+                            <li>Personally sourced and closed <span class="text-secondary dark:text-secondary-dark font-semibold">600+ net new commercial relationships</span> over 6 years through cold outbound.</li>
+                            <li>Led expansion into the Government/Defense vertical, securing landmark National Guard contracts.</li>
+                            <li>Implemented RevOps best practices to track deal velocity and ensure accurate forecasting.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="relative md:grid md:grid-cols-12 md:gap-8">
+                    <!-- Timeline Dot -->
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gray-200 dark:bg-gray-700 border-4 border-white dark:border-surface-dark"></div>
+                    
+                    <div class="md:col-span-5 md:text-right">
+                        <span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider">Mar 2017 – May 2019</span>
+                        <h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white">Transamerica Financial Advisers</h3>
+                        <div class="text-primary dark:text-primary-dark font-medium">Marketing Director / Financial Advisor</div>
+                    </div>
+                    
+                    <div class="md:col-span-7 mt-4 md:mt-0">
+                        <ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4">
+                            <li>Built a book of business from scratch in a new territory, scaling from 0 to 300+ clients in 24 months.</li>
+                            <li>Developed a "Risk & Control" consultative sales methodology mirroring SaaS value selling.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="relative md:grid md:grid-cols-12 md:gap-8">
+                    <!-- Timeline Dot -->
+                    <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 rounded-full bg-gray-200 dark:bg-gray-700 border-4 border-white dark:border-surface-dark"></div>
+                    
+                    <div class="md:col-span-5 md:text-right">
+                        <span class="text-sm font-mono text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wider">Oct 2016 – Mar 2017</span>
+                        <h3 class="text-xl font-bold mt-1 text-text-primary dark:text-white">Transamerica Financial Advisers</h3>
+                        <div class="text-primary dark:text-primary-dark font-medium">Licensed Financial Associate</div>
+                    </div>
+                    
+                    <div class="md:col-span-7 mt-4 md:mt-0">
+                        <ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4">
+                            <li>Achieved an <span class="text-secondary dark:text-secondary-dark font-semibold">85% conversion rate</span> from prospect to client during first 6 months.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies Section -->
+    <section id="case-studies" class="py-section-mobile md:py-section-desktop px-6 bg-bg-light dark:bg-bg-dark transition-colors">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="max-w-2xl mx-auto text-center mb-16">
+                <h2 class="text-[28px] md:text-[36px] font-bold mb-4 text-text-primary dark:text-white">Sales Case Studies</h2>
+                <p class="text-text-secondary dark:text-text-inverseSecondary">
+                    Real examples of complex deals I've sourced, negotiated, and closed. Demonstrating the ability to navigate multi-stakeholder cycles in challenging markets.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <!-- Card 1: National Guard -->
+                <div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer" onclick="openModal('modal-guard')">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-primary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors">US National Guard Contract</h3>
+                            <span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary">Government / Defense</span>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3">
+                        Opening a new vertical by navigating complex procurement cycles and compliance requirements. Overcame "black box" procurement challenges to secure a landmark contract.
+                    </p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm">8-month cycle</span>
+                        <span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                            Read Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 2: 14 State Expansion -->
+                <div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer" onclick="openModal('modal-expansion')">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-green-50 dark:bg-green-900/20 rounded-lg text-secondary">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors">14-State Territory Launch</h3>
+                            <span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary">Scale & Operations</span>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3">
+                        Scaled sales operations from a single territory to 14 US states with no existing brand presence. Built a $50M portfolio from scratch using RevOps discipline.
+                    </p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm">600+ New Logos</span>
+                        <span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                            Read Case Study <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Card 3: RevOps Excellence (NEW) -->
+                <div class="bg-white dark:bg-surface-dark rounded-xl border border-gray-100 dark:border-gray-800 p-8 hover:shadow-lg transition-all duration-300 group cursor-pointer md:col-span-2 lg:col-span-1" onclick="openModal('modal-revops')">
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg text-purple-600 dark:text-purple-400">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-text-primary dark:text-white group-hover:text-primary transition-colors">RevOps: Building a Sales Machine</h3>
+                            <span class="text-xs font-mono uppercase tracking-wider text-text-secondary dark:text-text-inverseSecondary">Technology & Process</span>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-6 line-clamp-3">
+                        Transformed a chaotic sales process into a data-driven, scalable system. Utilized Salesforce, ZoomInfo, and LinkedIn Sales Navigator to drive 100% pipeline visibility.
+                    </p>
+                    <div class="flex items-center justify-between mt-auto">
+                        <span class="text-secondary dark:text-secondary-dark font-medium font-mono text-sm">95% Forecast Accuracy</span>
+                        <span class="text-primary dark:text-primary-dark font-medium flex items-center group-hover:translate-x-1 transition-transform">
+                            View Tech Stack <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Tools -->
+    <section class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors">
+        <div class="max-w-[1000px] mx-auto">
+            <h2 class="text-[28px] md:text-[36px] font-bold mb-12 text-text-primary dark:text-white">Skills & Tools</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Sales Skills -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 border-b border-gray-100 dark:border-gray-800 pb-2 text-text-primary dark:text-white">Sales Expertise</h3>
+                    <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>New Business Development</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Greenfield Market Expansion</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pipeline Management & Forecasting</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Consultative / Value-Based Selling</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Multi-Stakeholder Negotiation</li>
+                    </ul>
+                </div>
+                
+                <!-- Tech Tools -->
+                <div>
+                    <h3 class="text-xl font-bold mb-6 border-b border-gray-100 dark:border-gray-800 pb-2 text-text-primary dark:text-white">Technology & Languages</h3>
+                    <div class="mb-6">
+                        <h4 class="font-medium text-text-primary dark:text-white mb-3">Stack</h4>
+                        <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary">
+                            <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>Salesforce (Certified AI Specialist)</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>HubSpot CRM</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-secondary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>LinkedIn Sales Navigator & ZoomInfo</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-medium text-text-primary dark:text-white mb-3">Languages</h4>
+                        <ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary text-sm">
+                            <li>English (Native)</li>
+                            <li>Hindi (Native)</li>
+                            <li class="flex items-center text-primary dark:text-primary-dark font-medium">
+                                <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
+                                Finnish (A1 - Basics / Actively Studying)
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References Placeholder -->
+    <section class="py-16 px-6 bg-bg-light dark:bg-bg-dark transition-colors">
+        <div class="max-w-[800px] mx-auto text-center border-t border-b border-gray-200 dark:border-gray-800 py-12">
+            <h2 class="text-2xl font-bold mb-4 text-text-primary dark:text-white">Professional References</h2>
+            <p class="text-text-secondary dark:text-text-inverseSecondary mb-6">
+                Available upon request. I can provide detailed contact information for former managers and clients who can attest to my sales performance and consultative approach.
+            </p>
+            <div class="inline-block px-6 py-3 bg-white dark:bg-surface-dark rounded-full border border-gray-200 dark:border-gray-700 italic text-text-secondary dark:text-text-inverseSecondary text-sm">
+                "Dhruvin combines aggressive prospecting with the discipline of Revenue Operations."
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-surface-dark transition-colors">
+        <div class="max-w-[600px] mx-auto text-center">
+            <h2 class="text-[28px] md:text-[36px] font-bold mb-4 text-text-primary dark:text-white">Let's Talk</h2>
+            <p class="text-text-secondary dark:text-text-inverseSecondary mb-10">
+                Interested in discussing new business opportunities? I'm currently based in Helsinki and open to roles across Finland.
+            </p>
+
+            <div class="space-y-6">
+                <a href="mailto:dhruvshah9197@gmail.com" class="block w-full p-4 rounded-xl border-2 border-primary text-primary dark:text-primary-dark font-bold text-lg hover:bg-primary hover:text-white transition-all duration-200">
+                    dhruvshah9197@gmail.com
+                </a>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:+358466658714" class="px-6 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 text-text-secondary dark:text-text-inverseSecondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        +358 466 658 714
+                    </a>
+                    <a href="#" class="px-6 py-3 rounded-lg bg-gray-50 dark:bg-gray-800 text-text-secondary dark:text-text-inverseSecondary font-medium hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
+                        LinkedIn Profile
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-6 bg-surface-dark text-white border-t border-gray-800">
+        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-sm text-gray-400">
+                © 2026 Dhruvin Shah | Senior Sales Executive
+            </div>
+            <div class="flex items-center gap-6 text-sm font-medium">
+                <a href="#" class="hover:text-primary transition-colors">Download CV</a>
+                <a href="mailto:dhruvshah9197@gmail.com" class="hover:text-primary transition-colors">Contact</a>
+            </div>
+            <div class="text-xs text-gray-500">
+                Built with Nordic Minimalism | Helsinki, Finland
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODALS -->
+
+    <!-- Modal 1: National Guard -->
+    <div id="modal-guard" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-guard')">
+        <div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-guard')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <span class="text-primary dark:text-primary-dark font-mono text-sm uppercase tracking-wider mb-2 block">Government / Defense</span>
+            <h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white">US National Guard Contract</h2>
+            
+            <div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed">
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">The Challenge</h3>
+                    <p>The US National Guard presented a unique opportunity to expand into the Government/Defense vertical—a market with zero brand recognition for our services. We faced a "black box" procurement cycle with heavy resistance from Legal, Security, and Finance teams.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">Strategic Approach</h3>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Value Translation:</strong> Translated complex FINRA regulations into clear business-value frameworks for government context.</li>
+                        <li><strong>Stakeholder Mapping:</strong> Identified and aligned key decision-makers across procurement and JAG (Judge Advocate General).</li>
+                        <li><strong>Direct Engagement:</strong> Personally facilitated every security review session to ensure internal compliance aligned with government auditors.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">Results & Impact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-secondary dark:text-secondary-dark font-medium"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Secured landmark multi-year contract</li>
+                        <li class="flex items-center text-secondary dark:text-secondary-dark font-medium"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Established repeatable playbook for defense-sector expansion</li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg border-l-4 border-red-500">
+                    <h3 class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2">Key Learning (Honesty)</h3>
+                    <p class="text-sm italic">"I initially underestimated the security audit timeline by 4 months, nearly stalling the deal. I learned to build a mandatory 30% 'compliance buffer' into all government sales cycles moving forward."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Expansion -->
+    <div id="modal-expansion" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-expansion')">
+        <div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-expansion')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <span class="text-primary dark:text-primary-dark font-mono text-sm uppercase tracking-wider mb-2 block">Scale & Operations</span>
+            <h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white">14-State Territory Launch</h2>
+            
+            <div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed">
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">The Challenge</h3>
+                    <p>Tasked with scaling sales operations from a single territory (California) to 14 US states with no existing brand presence. Prospects in the Midwest had zero awareness of our West Coast successes, and regulatory environments varied by state.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">Strategic Approach</h3>
+                    <ul class="list-disc ml-5 space-y-2">
+                        <li><strong>Risk & Control Pivot:</strong> Shifted from feature-selling to a consultative model focusing on regional regulatory compliance as the primary trust builder.</li>
+                        <li><strong>RevOps Implementation:</strong> Enforced strict CRM hygiene to track deal velocity across disparate territories.</li>
+                        <li><strong>Localized Vernacular:</strong> Adapted sales scripts to match regional business languages.</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2">Results & Impact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-secondary dark:text-secondary-dark font-medium"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Captured 600+ net new logos</li>
+                        <li class="flex items-center text-secondary dark:text-secondary-dark font-medium"><svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Scaled AUM from $0 to $50M+ in under 6 years</li>
+                    </ul>
+                </div>
+
+                <div class="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg border-l-4 border-red-500">
+                    <h3 class="text-sm font-bold text-red-600 uppercase tracking-wider mb-2">Key Learning (Honesty)</h3>
+                    <p class="text-sm italic">"In the first two states, I used California scripts. They failed. I realized 'Expansion' requires translation. I spent 3 weeks shadowing local brokers to learn regional vernacular before securing our first win."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: RevOps Excellence -->
+    <div id="modal-revops" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm" onclick="closeModal('modal-revops')">
+        <div class="modal-content bg-white dark:bg-surface-dark w-full max-w-[900px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-revops')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <span class="text-purple-600 dark:text-purple-400 font-mono text-sm uppercase tracking-wider mb-2 block">Technology & Process</span>
+            <h2 class="text-3xl font-bold mb-4 text-text-primary dark:text-white">RevOps Excellence: Full Sales Cycle</h2>
+            <p class="text-text-secondary dark:text-text-inverseSecondary mb-8 max-w-2xl">
+                Demonstrating technical proficiency across the entire sales lifecycle. Transforming manual processes into a predictable, data-driven revenue engine.
+            </p>
+
+            <!-- Key Results Highlight -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-secondary dark:text-secondary-dark">95%</div>
+                    <div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1">Forecast Accuracy</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-secondary dark:text-secondary-dark">10+ Hrs</div>
+                    <div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1">Saved Weekly</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-secondary dark:text-secondary-dark">92%</div>
+                    <div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1">Retention Rate</div>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center">
+                    <div class="text-2xl font-bold text-secondary dark:text-secondary-dark">35%</div>
+                    <div class="text-xs text-text-secondary dark:text-text-inverseSecondary uppercase mt-1">Upsell Rate</div>
+                </div>
+            </div>
+            
+            <!-- Interactive Tabs -->
+            <div class="mb-8 border-b border-gray-200 dark:border-gray-700">
+                <div class="flex flex-wrap gap-2 md:gap-8" role="tablist">
+                    <button class="tab-btn active pb-3 border-b-2 border-primary text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('prospecting', this)">1. Prospecting</button>
+                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('discovery', this)">2. Discovery</button>
+                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('closing', this)">3. Closing</button>
+                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium text-sm md:text-base transition-colors" onclick="switchTab('handoff', this)">4. Handoff</button>
+                </div>
+            </div>
+
+            <!-- Tab Content: Prospecting -->
+            <div id="prospecting" class="tab-content block animate-fade-in">
+                <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-lg font-bold text-text-primary dark:text-white">Lead Generation & Outreach</h3>
+                        <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside">
+                            <li><strong>Account Research:</strong> Used <span class="text-primary font-medium">LinkedIn Sales Navigator</span> to identify decision-makers in 200+ high-fit mid-market accounts.</li>
+                            <li><strong>Enrichment:</strong> Leveraged <span class="text-primary font-medium">ZoomInfo</span> for direct dials, achieving 60% contact accuracy.</li>
+                            <li><strong>Cadence:</strong> Executed multi-channel outreach (Email, Phone, LinkedIn) logged automatically in <span class="text-primary font-medium">Salesforce</span>.</li>
+                        </ul>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4">
+                            <span class="font-bold text-blue-700 dark:text-blue-300 text-sm">Outcome:</span>
+                            <span class="text-blue-600 dark:text-blue-400 text-sm"> 200 new leads/month with 15% conversion to Opportunity.</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>LinkedIn Sales Nav</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>ZoomInfo</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Salesforce CRM</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Calendly</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Discovery -->
+            <div id="discovery" class="tab-content hidden animate-fade-in">
+                 <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-lg font-bold text-text-primary dark:text-white">Needs Analysis & Solution</h3>
+                        <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside">
+                            <li><strong>Framework:</strong> Utilized <span class="text-primary font-medium">MEDDIC + BANT</span> hybrid to qualify budget, authority, and pain points during Zoom calls.</li>
+                            <li><strong>Forecasting:</strong> Immediate opportunity creation in Salesforce with probability weighting based on qualification criteria.</li>
+                            <li><strong>Presentation:</strong> Delivered custom slide decks addressing specific discovery pain points, tracking ROI calculations.</li>
+                        </ul>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4">
+                            <span class="font-bold text-blue-700 dark:text-blue-300 text-sm">Outcome:</span>
+                            <span class="text-blue-600 dark:text-blue-400 text-sm"> 85% discovery completion rate and 60% conversion to qualified pipeline.</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>Zoom / Teams</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>Salesforce Notes</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>Google Slides</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Closing -->
+            <div id="closing" class="tab-content hidden animate-fade-in">
+                 <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-lg font-bold text-text-primary dark:text-white">Negotiation & Contract</h3>
+                        <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside">
+                            <li><strong>Proposal:</strong> Generated formal quotes in Salesforce with automated approval routing for discounts.</li>
+                            <li><strong>Negotiation:</strong> Tracked every stakeholder concern (Legal, Procurement, IT) in CRM to ensure deal velocity.</li>
+                            <li><strong>Execution:</strong> Managed e-signatures via <span class="text-primary font-medium">DocuSign</span>, reducing admin time by 3 days.</li>
+                        </ul>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4">
+                            <span class="font-bold text-blue-700 dark:text-blue-300 text-sm">Outcome:</span>
+                            <span class="text-blue-600 dark:text-blue-400 text-sm"> 60% close rate with a 45-day average sales cycle (Mid-Market).</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>DocuSign</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Salesforce Quotes</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Slack (Internal)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab Content: Handoff -->
+            <div id="handoff" class="tab-content hidden animate-fade-in">
+                 <div class="flex flex-col md:flex-row gap-8">
+                    <div class="flex-1 space-y-4">
+                        <h3 class="text-lg font-bold text-text-primary dark:text-white">Customer Success Transfer</h3>
+                        <ul class="space-y-3 text-text-secondary dark:text-text-inverseSecondary list-disc list-inside">
+                            <li><strong>Structure:</strong> Conducted formal 30-minute handoff calls with CS team, transferring all discovery notes and success criteria.</li>
+                            <li><strong>Documentation:</strong> Uploaded signed contracts and implementation timelines to Salesforce files for single-source-of-truth.</li>
+                            <li><strong>Lifecycle:</strong> Maintained relationship for QBRs, driving a 35% upsell rate in year 1.</li>
+                        </ul>
+                        <div class="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-lg mt-4">
+                            <span class="font-bold text-blue-700 dark:text-blue-300 text-sm">Outcome:</span>
+                            <span class="text-blue-600 dark:text-blue-400 text-sm"> 92% retention rate (vs 75% industry avg) and zero "lost in translation" errors.</span>
+                        </div>
+                    </div>
+                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
+                        <div class="space-y-2">
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Salesforce Files</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Asana / Monday</div>
+                            <div class="flex items-center text-sm font-medium"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>CS Platform</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Modal Logic
+        function openModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        }
+
+        function closeModal(modalId) {
+            const modal = document.getElementById(modalId);
+            modal.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                document.querySelectorAll('.modal').forEach(modal => {
+                    modal.classList.add('hidden');
+                });
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Tab Switcher Logic
+        function switchTab(tabId, btnElement) {
+            // Hide all tab content
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.add('hidden');
+                content.classList.remove('block');
+            });
+            
+            // Show selected tab content
+            const selectedTab = document.getElementById(tabId);
+            selectedTab.classList.remove('hidden');
+            selectedTab.classList.add('block');
+            
+            // Reset all button styles
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active', 'border-primary', 'text-primary');
+                btn.classList.add('border-transparent', 'text-text-secondary');
+            });
+            
+            // Set active button style
+            btnElement.classList.remove('border-transparent', 'text-text-secondary');
+            btnElement.classList.add('active', 'border-primary', 'text-primary');
+        }
+
+        // Dark Mode Logic
+        const themeToggle = document.getElementById('theme-toggle');
+        const html = document.documentElement;
+
+        // Check local storage or system preference
+        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            html.classList.add('dark');
+        } else {
+            html.classList.remove('dark');
+        }
+
+        themeToggle.addEventListener('click', () => {
+            if (html.classList.contains('dark')) {
+                html.classList.remove('dark');
+                localStorage.theme = 'light';
+            } else {
+                html.classList.add('dark');
+                localStorage.theme = 'dark';
+            }
+        });
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('shadow-sm');
+            } else {
+                navbar.classList.remove('shadow-sm');
+            }
+        });
+    </script>
 </body>
 </html>
