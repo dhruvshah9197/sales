@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhruvin Shah | Senior Sales Executive | Helsinki</title>
-    <meta name="description" content="Senior Sales Executive with 9+ years experience in B2B sales, market expansion, and complex deal closing. Based in Helsinki, Finland.">
+    <title>Dhruvin Shah | Sales & RevOps Portfolio</title>
+    <meta name="description" content="Senior Sales Executive & RevOps Leader. Proven track record of closing deals and building revenue systems at Transamerica.">
+    <!-- Updated Image Reference -->
     <meta property="og:image" content="dhruvin-headshot.JPG">
     
     <!-- Fonts: Inter & JetBrains Mono -->
@@ -62,123 +63,41 @@
 
     <style>
         /* --- NORDIC DESIGN SYSTEM --- */
+        body { background-color: #FAFAFA; color: #1A1A1A; transition: background-color 0.3s ease, color 0.3s ease; }
+        .dark body { background-color: #0F0F0F; color: #F5F5F5; }
 
-        body {
-            background-color: #FAFAFA;
-            color: #1A1A1A;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+        /* Hero Background */
+        .bg-hero { background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 50%, #FFFFFF 100%); }
+        .dark .bg-hero { background: linear-gradient(135deg, #0F0F0F 0%, #1A1A1A 50%, #252525 100%); }
 
-        .dark body {
-            background-color: #0F0F0F;
-            color: #F5F5F5;
-        }
+        /* Geometric Accents */
+        .geo-circle { position: absolute; border-radius: 50%; background: rgba(37, 99, 235, 0.03); pointer-events: none; z-index: 0; filter: blur(60px); }
+        .dark .geo-circle { background: rgba(59, 130, 246, 0.05); }
 
-        /* Hero Background System */
-        .bg-hero {
-            background: linear-gradient(135deg, #FAFAFA 0%, #F5F5F5 50%, #FFFFFF 100%);
-        }
-        .dark .bg-hero {
-            background: linear-gradient(135deg, #0F0F0F 0%, #1A1A1A 50%, #252525 100%);
-        }
+        /* Section Headings */
+        .section-heading { position: relative; text-align: center; }
+        .section-heading::after { content: ''; display: block; width: 60px; height: 4px; background: #2563EB; margin: 24px auto 0; border-radius: 2px; }
+        .dark .section-heading::after { background: #3B82F6; }
 
-        /* Geometric Accents (Subtle) */
-        .geo-circle {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(37, 99, 235, 0.03); /* 3% opacity blue */
-            pointer-events: none;
-            z-index: 0;
-            filter: blur(60px);
-        }
-        .dark .geo-circle {
-            background: rgba(59, 130, 246, 0.05);
-        }
-
-        /* Section Headings with Underline */
-        .section-heading {
-            position: relative;
-            text-align: center;
-        }
-        .section-heading::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 4px;
-            background: #2563EB;
-            margin: 24px auto 0;
-            border-radius: 2px;
-        }
-        .dark .section-heading::after {
-            background: #3B82F6;
-        }
-
-        /* Metric Cards */
-        .metric-card {
-            background: linear-gradient(135deg, #F8F9FA 0%, #FFFFFF 100%);
-            border: 1px solid #E5E5E5;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .dark .metric-card {
-            background: linear-gradient(135deg, #1A1A1A 0%, #252525 100%);
-            border-color: #333;
-        }
-        .metric-card:hover {
-            transform: scale(1.02);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-
-        /* Case Study Cards (Elevated) */
-        .case-study-card {
-            background: #FFFFFF;
-            border: 1px solid #E5E5E5;
-            transition: all 0.3s ease;
-        }
-        .dark .case-study-card {
-            background: #1A1A1A;
-            border-color: #333;
-        }
-        .case-study-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-            border-color: #2563EB;
-        }
-        .dark .case-study-card:hover {
-            border-color: #3B82F6;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-        }
+        /* Cards */
+        .card-elevated { background: #FFFFFF; border: 1px solid #E5E5E5; transition: all 0.3s ease; }
+        .dark .card-elevated { background: #1A1A1A; border-color: #333; }
+        .card-elevated:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: #2563EB; }
+        .dark .card-elevated:hover { border-color: #3B82F6; box-shadow: 0 20px 40px rgba(0,0,0,0.3); }
 
         /* Link Underline Animation */
-        .animated-link {
-            position: relative;
-            text-decoration: none;
-        }
-        .animated-link::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #2563EB;
-            transition: width 0.3s ease;
-        }
-        .animated-link:hover::after {
-            width: 100%;
-        }
+        .animated-link { position: relative; text-decoration: none; }
+        .animated-link::after { content: ''; position: absolute; bottom: -2px; left: 0; width: 0; height: 2px; background: #2563EB; transition: width 0.3s ease; }
+        .animated-link:hover::after { width: 100%; }
 
-        /* Custom Scrollbar */
+        /* Scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #E5E5E5; border-radius: 4px; }
         .dark ::-webkit-scrollbar-thumb { background: #333; }
 
         /* Animations */
-        .fade-in-up {
-            animation: fadeInUp 0.8s ease-out forwards;
-            opacity: 0;
-            transform: translateY(20px);
-        }
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
         @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
         .delay-100 { animation-delay: 100ms; }
         .delay-200 { animation-delay: 200ms; }
@@ -186,26 +105,22 @@
 
         /* Modal */
         .modal { transition: opacity 0.3s ease, visibility 0.3s ease; }
-        .modal-content { transition: transform 0.3s ease; }
         .modal.hidden { opacity: 0; visibility: hidden; pointer-events: none; }
-        .modal.hidden .modal-content { transform: scale(0.95); }
     </style>
 </head>
 <body class="antialiased selection:bg-primary selection:text-white font-sans">
 
-    <!-- Navigation (Glassmorphism) -->
+    <!-- Navigation -->
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-bg-light/90 dark:bg-bg-dark/90 backdrop-blur-md border-b border-transparent">
         <div class="max-w-[1200px] mx-auto px-6 h-[72px] flex items-center justify-between">
             <a href="#" class="font-bold text-xl tracking-tight text-text-primary dark:text-white hover:text-primary transition-colors">DS</a>
-            
-            <div class="hidden md:flex items-center space-x-8 text-[16px] font-medium text-text-secondary dark:text-text-inverseSecondary">
+            <div class="hidden md:flex items-center space-x-8 text-[15px] font-medium text-text-secondary dark:text-text-inverseSecondary uppercase tracking-wide">
                 <a href="#about" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">About</a>
                 <a href="#experience" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">Experience</a>
-                <a href="#case-studies" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">Case Studies</a>
+                <a href="#portfolio" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">Portfolio</a>
+                <a href="#skills" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">Skills</a>
                 <a href="#contact" class="animated-link hover:text-primary dark:hover:text-primary-dark transition-colors">Contact</a>
-                
-                <!-- Dark Mode Toggle -->
-                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-primary" aria-label="Toggle Dark Mode">
+                <button id="theme-toggle" class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-colors focus:outline-none">
                     <svg class="w-5 h-5 hidden dark:block text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
                     <svg class="w-5 h-5 block dark:hidden text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 24.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                 </button>
@@ -213,51 +128,70 @@
         </div>
     </nav>
 
-    <!-- Hero Section (Subtle Gradient & Geometric Shapes) -->
+    <!-- Hero Section -->
     <section class="min-h-screen flex items-center justify-center px-6 relative pt-20 overflow-hidden bg-hero">
-        <!-- Geometric Accents -->
         <div class="geo-circle w-[600px] h-[600px] -top-20 -right-20"></div>
         <div class="geo-circle w-[400px] h-[400px] -bottom-20 -left-10"></div>
 
-        <div class="max-w-[1200px] mx-auto text-center relative z-10">
-            <h1 class="text-[40px] md:text-[64px] font-bold text-text-primary dark:text-white mb-6 fade-in-up leading-tight tracking-tight">
-                Dhruvin Shah
+        <div class="max-w-[1000px] mx-auto text-center relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-100 dark:bg-blue-900/30 text-primary dark:text-blue-300 text-sm font-semibold tracking-wider mb-6 fade-in-up">
+                SENIOR SALES EXECUTIVE | REVOPS LEADER
+            </span>
+            <h1 class="text-[40px] md:text-[64px] font-bold text-text-primary dark:text-white mb-6 fade-in-up delay-100 leading-tight">
+                Revenue Operations Built on<br/>
+                <span class="text-secondary">Frontline Sales Experience.</span>
             </h1>
-            <p class="text-[20px] md:text-[24px] text-text-secondary dark:text-text-inverseSecondary font-medium mb-8 fade-in-up delay-100">
-                Senior Sales Executive | New Business Hunter
-            </p>
-            <p class="text-[18px] text-text-secondary dark:text-text-inverseSecondary mb-12 max-w-2xl mx-auto leading-relaxed fade-in-up delay-200">
-                Opening new markets and closing complex B2B deals in regulated industries. Transitioning financial services expertise to Nordic SaaS growth.
+            <p class="text-[18px] md:text-[20px] text-text-secondary dark:text-text-inverseSecondary mb-10 max-w-2xl mx-auto leading-relaxed fade-in-up delay-200">
+                With 6 years of quota-carrying experience at <strong>Transamerica</strong>, I understand the daily realities of sales. I transitioned to Operations to build the systems I wished I had as a seller—designing practical, efficient workflows that help teams focus on closing.
             </p>
             
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 fade-in-up delay-300">
-                <a href="#case-studies" class="w-full sm:w-auto px-10 py-4 bg-primary hover:bg-blue-700 text-white font-semibold rounded-lg transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5">
-                    View Case Studies
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 fade-in-up delay-300">
+                <!-- Path 1: Sales -->
+                <a href="#portfolio" class="group relative w-full md:w-auto px-8 py-5 bg-white dark:bg-bg-darkSec border border-gray-200 dark:border-gray-700 rounded-xl hover:border-secondary hover:shadow-lg transition-all text-left flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-green-50 dark:bg-green-900/20 text-secondary group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-text-primary dark:text-white group-hover:text-secondary">Sales Wins</h3>
+                        <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mt-1">Deals Closed & Expansion</p>
+                    </div>
                 </a>
-                <a href="#contact" class="w-full sm:w-auto px-10 py-4 border-2 border-primary text-primary dark:text-primary-dark dark:border-primary-dark font-semibold rounded-lg hover:bg-primary hover:text-white dark:hover:bg-primary-dark dark:hover:text-white transition-all duration-200">
-                    Contact Me
+
+                <!-- Path 2: RevOps -->
+                <a href="#revops-portfolio" class="group relative w-full md:w-auto px-8 py-5 bg-white dark:bg-bg-darkSec border border-gray-200 dark:border-gray-700 rounded-xl hover:border-primary hover:shadow-lg transition-all text-left flex items-start gap-4">
+                    <div class="p-3 rounded-lg bg-blue-50 dark:bg-blue-900/20 text-primary group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-text-primary dark:text-white group-hover:text-primary">RevOps Systems</h3>
+                        <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mt-1">Process Architecture</p>
+                    </div>
                 </a>
             </div>
-        </div>
-        
-        <!-- Scroll Indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce text-text-secondary dark:text-text-inverseSecondary opacity-50">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+
+            <!-- Credentials Bar -->
+            <div class="mt-16 flex flex-wrap justify-center gap-4 md:gap-8 text-sm font-medium text-text-secondary dark:text-text-inverseSecondary fade-in-up delay-300">
+                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-blue-500 mr-2"></span>Experience with Salesforce & HubSpot</span>
+                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-green-500 mr-2"></span>9+ Years at Transamerica</span>
+                <span class="flex items-center"><span class="w-2 h-2 rounded-full bg-purple-500 mr-2"></span>14 US States Launched</span>
+                <span class="flex items-center">📍 Helsinki, Finland</span>
+            </div>
         </div>
     </section>
 
-    <!-- About Section (White Background) -->
-    <section id="about" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-bg-darkSec transition-colors">
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-white dark:bg-bg-darkSec">
         <div class="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
             <!-- Photo Column -->
             <div class="md:col-span-5 flex justify-center md:justify-start">
                 <div class="relative group">
-                    <!-- FIXED: Professional Headshot Image with new filename -->
+                    <!-- Updated Image Tag with new filename -->
                     <img 
                         src="dhruvin-headshot.JPG" 
                         alt="Dhruvin Shah - Senior Sales Executive Professional Headshot" 
                         class="relative w-[300px] h-[375px] md:w-[400px] md:h-[500px] object-cover rounded-xl shadow-2xl transition duration-500 hover:scale-[1.02] border border-gray-100 dark:border-gray-800"
                         loading="eager"
+                        onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Dhruvin+Shah&background=2563EB&color=fff&size=400';"
                     >
                 </div>
             </div>
@@ -267,48 +201,22 @@
                 <h2 class="text-[32px] md:text-[48px] font-bold mb-8 text-text-primary dark:text-white leading-tight">About Me</h2>
                 <div class="prose dark:prose-invert text-[18px] text-text-secondary dark:text-text-inverseSecondary leading-relaxed space-y-6 mb-12">
                     <p>
-                        Senior Sales Executive with 9 years of experience opening new markets and closing complex B2B deals. I specialize in full-cycle sales: self-sourcing leads, navigating multi-stakeholder negotiations, and delivering net-new revenue.
+                        My journey began in 2016 as a <strong>Financial Associate</strong> at <strong>Transamerica</strong>, where I learned the fundamentals of sales—prospecting, rejection, and closing—the hard way. Over the next 9 years, I grew into a <strong>Senior Marketing Director</strong> role, where I didn't just close deals; I began fixing the broken processes that slowed my team down.
                     </p>
                     <p>
-                        My background in highly regulated US Financial Services (FINRA/SEC) has equipped me to sell effectively to Legal, Procurement, and C-Level stakeholders. I now bring this "Hunter" expertise to the Nordic SaaS space, where I excel at consultative selling and pipeline management.
+                        I transitioned from a pure "Hunter" role to a hybrid Sales/Operations leader. I saw that while I could close deals individually, I could multiply revenue by building better systems for the 70+ people on my team. I am now based in Helsinki, bringing this dual expertise to the Nordic market.
                     </p>
-                    <p>
-                        Currently based in Helsinki, I'm actively seeking opportunities in B2B SaaS sales where I can drive market expansion.
-                    </p>
-                </div>
-
-                <!-- Stats Grid with Visual Bars -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Metric 1 -->
-                    <div class="metric-card p-6 rounded-xl">
-                        <div class="text-3xl lg:text-5xl font-bold text-secondary dark:text-secondary-dark leading-none mb-2">600+</div>
-                        <div class="text-xs font-semibold text-text-secondary dark:text-text-inverseSecondary uppercase tracking-widest mb-3">Net New Logos</div>
-                        <div class="w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-secondary to-primary w-full rounded-full"></div>
-                        </div>
-                    </div>
-                    <!-- Metric 2 -->
-                    <div class="metric-card p-6 rounded-xl">
-                        <div class="text-3xl lg:text-5xl font-bold text-secondary dark:text-secondary-dark leading-none mb-2">14</div>
-                        <div class="text-xs font-semibold text-text-secondary dark:text-text-inverseSecondary uppercase tracking-widest mb-3">US States Launched</div>
-                        <div class="w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-secondary to-primary w-3/4 rounded-full"></div>
-                        </div>
-                    </div>
-                    <!-- Metric 3 -->
-                    <div class="metric-card p-6 rounded-xl">
-                        <div class="text-3xl lg:text-5xl font-bold text-secondary dark:text-secondary-dark leading-none mb-2">$50M+</div>
-                        <div class="text-xs font-semibold text-text-secondary dark:text-text-inverseSecondary uppercase tracking-widest mb-3">Portfolio Built</div>
-                        <div class="w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
-                            <div class="h-full bg-gradient-to-r from-secondary to-primary w-full rounded-full"></div>
-                        </div>
+                    <div class="flex flex-wrap gap-4 mt-6">
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-semibold text-text-primary dark:text-white">English (Native)</span>
+                        <span class="px-4 py-2 bg-gray-100 dark:bg-gray-800 rounded-full text-sm font-semibold text-text-primary dark:text-white">Hindi (Native)</span>
+                        <span class="px-4 py-2 bg-blue-50 dark:bg-blue-900/20 rounded-full text-sm font-semibold text-primary dark:text-blue-300">Finnish (A1 - Active Learner)</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section (Soft Gray Background) -->
+    <!-- Professional Experience (Restored & Enhanced) -->
     <section id="experience" class="py-section-mobile md:py-section-desktop px-6 bg-bg-gray dark:bg-bg-dark transition-colors">
         <div class="max-w-[1000px] mx-auto">
             <h2 class="text-[32px] md:text-[48px] font-bold mb-16 text-text-primary dark:text-white section-heading">Professional Experience</h2>
@@ -324,8 +232,9 @@
                     </div>
                     <div class="md:col-span-8 mt-4 md:mt-0">
                         <ul class="space-y-4 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4 text-lg">
-                            <li><strong>Outbound Mastery:</strong> Personally sourced and closed <span class="text-primary font-semibold">600+ net new commercial relationships</span> by bypassing gatekeepers and building trust through cold outreach.</li>
+                            <li><strong>Outbound Mastery:</strong> Personally sourced and closed <span class="font-semibold text-primary">600+ net new commercial relationships</span> by bypassing gatekeepers and building trust through cold outreach.</li>
                             <li><strong>Market Expansion:</strong> Led the strategic entry into the Government/Defense vertical, successfully navigating "black box" procurement cycles to secure landmark National Guard contracts.</li>
+                            <li><strong>RevOps Leadership:</strong> Architected the multi-state sales process for 70+ reps, implementing a new Lead-to-Order workflow that reduced admin time by 40%.</li>
                             <li><strong>Full Cycle Ownership:</strong> Owned the entire sales process from initial cold call to final signature, consistently exceeding annual quotas by focusing on high-value upper mid-market clients.</li>
                             <li><strong>Strategic Negotiation:</strong> Managed complex contract negotiations, aligning client legal teams with internal compliance requirements (FINRA/SEC).</li>
                         </ul>
@@ -343,6 +252,7 @@
                         <ul class="space-y-4 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4 text-lg">
                             <li><strong>Greenfield Execution:</strong> Built a book of business from scratch in a new territory, scaling from 0 to 300+ clients in just 24 months through aggressive go-to-market execution.</li>
                             <li><strong>Consultative Selling:</strong> Developed a "Risk & Control" sales methodology that mirrored modern SaaS value-selling, translating complex regulatory needs into clear business value.</li>
+                            <li><strong>Early Process Optimization:</strong> Standardized proposal generation templates which reduced error rates and sped up the closing process for the regional team.</li>
                         </ul>
                     </div>
                 </div>
@@ -356,7 +266,7 @@
                     </div>
                     <div class="md:col-span-8 mt-4 md:mt-0">
                         <ul class="space-y-4 text-text-secondary dark:text-text-inverseSecondary leading-relaxed list-disc list-outside ml-4 text-lg">
-                            <li><strong>Sales Fundamentals:</strong> Achieved an <span class="text-primary font-semibold">85% conversion rate</span> from prospect to client during the first 6 months, demonstrating rapid mastery of financial products and sales mechanics.</li>
+                            <li><strong>Sales Fundamentals:</strong> Achieved an <span class="font-semibold text-primary">85% conversion rate</span> from prospect to client during the first 6 months, demonstrating rapid mastery of financial products and sales mechanics.</li>
                         </ul>
                     </div>
                 </div>
@@ -365,195 +275,151 @@
         </div>
     </section>
 
-    <!-- Case Studies Section (White Background) -->
-    <section id="case-studies" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-bg-darkSec transition-colors">
+    <!-- UNIFIED PORTFOLIO SECTION: Sales & RevOps (Two Sides of Coin) -->
+    <section id="portfolio" class="py-section-mobile md:py-section-desktop px-6 bg-white dark:bg-bg-darkSec transition-colors">
         <div class="max-w-[1200px] mx-auto">
-            <h2 class="text-[32px] md:text-[48px] font-bold mb-4 text-text-primary dark:text-white section-heading">Sales Case Studies</h2>
-            <p class="text-text-secondary dark:text-text-inverseSecondary text-center max-w-2xl mx-auto mb-16 text-lg">
-                Real examples of complex deals I've sourced, negotiated, and closed. Demonstrating the ability to navigate multi-stakeholder cycles in challenging markets.
-            </p>
+            <div class="text-center mb-16">
+                <span class="text-primary font-mono text-sm uppercase tracking-wider mb-2 block">Dual Expertise</span>
+                <h2 class="text-[32px] md:text-[48px] font-bold text-text-primary dark:text-white section-heading">Sales Wins & System Builds</h2>
+                <p class="text-text-secondary dark:text-text-inverseSecondary mt-6 max-w-2xl mx-auto">
+                    Two sides of the same coin: I close complex deals, AND I build the systems that make closing predictable.
+                </p>
+            </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- ROW 1: SALES WINS (Green Accents) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="col-span-1 md:col-span-2 text-sm font-bold uppercase tracking-widest text-secondary mb-2 opacity-80">Sales Achievements (The "Hunter" Side)</div>
                 
-                <!-- Card 1 -->
-                <div class="case-study-card rounded-2xl p-10 cursor-pointer group" onclick="openModal('modal-guard')">
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-bold uppercase tracking-widest text-primary bg-blue-50 dark:bg-blue-900/20 px-3 py-1 rounded-full">Government</span>
+                <!-- Sales Project 1 -->
+                <div class="card-elevated rounded-xl p-8 cursor-pointer group flex flex-col" onclick="openModal('modal-guard')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg text-secondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0z"></path></svg></div>
+                        <span class="px-2 py-1 text-xs font-bold bg-green-50 text-green-700 rounded">SALES WIN</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-text-primary dark:text-white mb-4 group-hover:text-primary transition-colors">US National Guard Contract</h3>
-                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-8 line-clamp-3 leading-relaxed">
-                        Opening a new vertical by navigating complex procurement cycles. Overcame "black box" challenges to secure a landmark contract.
-                    </p>
-                    <div class="flex items-center justify-between pt-6 border-t border-gray-100 dark:border-gray-800">
-                        <div class="flex flex-col">
-                            <span class="text-xs text-text-secondary uppercase">Sales Cycle</span>
-                            <span class="font-bold text-primary">8 Months</span>
-                        </div>
-                        <span class="text-primary font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                            Read Case Study <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </span>
+                    <h3 class="text-xl font-bold text-text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">US National Guard Contract</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mb-4 flex-grow">Opened a greenfield Government/Defense vertical by navigating "black box" procurement cycles.</p>
+                    <div class="pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center text-sm">
+                        <span class="font-semibold text-secondary">Landmark Deal Closed</span>
+                        <span class="text-text-primary font-medium flex items-center">Read Story &rarr;</span>
                     </div>
                 </div>
 
-                <!-- Card 2 -->
-                <div class="case-study-card rounded-2xl p-10 cursor-pointer group" onclick="openModal('modal-expansion')">
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-bold uppercase tracking-widest text-secondary bg-green-50 dark:bg-green-900/20 px-3 py-1 rounded-full">Scale</span>
+                <!-- Sales Project 2 -->
+                <div class="card-elevated rounded-xl p-8 cursor-pointer group flex flex-col" onclick="openModal('modal-expansion')">
+                    <div class="flex justify-between items-start mb-4">
+                        <div class="p-3 bg-green-100 dark:bg-green-900/30 rounded-lg text-secondary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                        <span class="px-2 py-1 text-xs font-bold bg-green-50 text-green-700 rounded">SALES WIN</span>
                     </div>
-                    <h3 class="text-2xl font-bold text-text-primary dark:text-white mb-4 group-hover:text-primary transition-colors">14-State Territory Launch</h3>
-                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-8 line-clamp-3 leading-relaxed">
-                        Scaled sales operations from a single territory to 14 US states with no existing brand presence. Built a $50M portfolio from scratch.
-                    </p>
-                    <div class="flex items-center justify-between pt-6 border-t border-gray-100 dark:border-gray-800">
-                        <div class="flex flex-col">
-                            <span class="text-xs text-text-secondary uppercase">Result</span>
-                            <span class="font-bold text-secondary">600+ New Logos</span>
-                        </div>
-                        <span class="text-primary font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                            Read Case Study <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </span>
+                    <h3 class="text-xl font-bold text-text-primary dark:text-white mb-2 group-hover:text-secondary transition-colors">14-State Territory Launch</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mb-4 flex-grow">Scaled sales operations from 1 state to 14. Solved the "unknown commodity" problem through localized strategy.</p>
+                    <div class="pt-4 border-t border-gray-100 dark:border-gray-800 flex justify-between items-center text-sm">
+                        <span class="font-semibold text-secondary">600+ New Logos</span>
+                        <span class="text-text-primary font-medium flex items-center">Read Story &rarr;</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROW 2: REVOPS SYSTEMS (Blue Accents) -->
+            <div id="revops-portfolio" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="col-span-1 md:col-span-2 lg:col-span-3 text-sm font-bold uppercase tracking-widest text-primary mb-2 opacity-80">RevOps Builds (The "Architect" Side)</div>
+
+                <!-- RevOps Project 1 -->
+                <div class="card-elevated rounded-xl p-8 cursor-pointer group flex flex-col" onclick="openModal('modal-project1')">
+                    <div class="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 w-fit rounded-lg text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg></div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2 group-hover:text-primary transition-colors">Multi-State Sales Architecture</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mb-4 flex-grow">Designed L2O process for 70 reps. Solved licensing bottlenecks and automated 96% of lead routing.</p>
+                    <div class="pt-4 border-t border-gray-100 dark:border-gray-800 text-sm font-semibold text-primary">
+                        Result: 95% CRM Adoption
                     </div>
                 </div>
 
-                <!-- Card 3 -->
-                <div class="case-study-card rounded-2xl p-10 cursor-pointer group md:col-span-2" onclick="openModal('modal-revops')">
-                    <div class="flex items-center justify-between mb-6">
-                        <span class="text-xs font-bold uppercase tracking-widest text-purple-600 bg-purple-50 dark:bg-purple-900/20 px-3 py-1 rounded-full">RevOps</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-text-primary dark:text-white mb-4 group-hover:text-primary transition-colors">RevOps Excellence: Full Sales Cycle</h3>
-                    <p class="text-text-secondary dark:text-text-inverseSecondary mb-8 max-w-3xl leading-relaxed">
-                        Transformed a chaotic sales process into a data-driven, scalable system. Utilized Salesforce, ZoomInfo, and LinkedIn Sales Navigator to drive 100% pipeline visibility.
-                    </p>
-                    <div class="flex items-center justify-between pt-6 border-t border-gray-100 dark:border-gray-800">
-                        <div class="flex gap-8">
-                            <div class="flex flex-col">
-                                <span class="text-xs text-text-secondary uppercase">Accuracy</span>
-                                <span class="font-bold text-purple-600">95% Forecast</span>
-                            </div>
-                            <div class="flex flex-col">
-                                <span class="text-xs text-text-secondary uppercase">Efficiency</span>
-                                <span class="font-bold text-purple-600">10+ Hrs Saved</span>
-                            </div>
-                        </div>
-                        <span class="text-primary font-medium flex items-center group-hover:translate-x-1 transition-transform">
-                            View Tech Stack <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                        </span>
+                <!-- RevOps Project 2 -->
+                <div class="card-elevated rounded-xl p-8 cursor-pointer group flex flex-col" onclick="openModal('modal-project2')">
+                    <div class="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 w-fit rounded-lg text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path></svg></div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2 group-hover:text-primary transition-colors">Revenue Interlock Framework</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mb-4 flex-grow">Unified Marketing & Sales definitions (MQL/SQL). Built dashboards to align pipeline data.</p>
+                    <div class="pt-4 border-t border-gray-100 dark:border-gray-800 text-sm font-semibold text-primary">
+                        Result: +52% Pipeline Coverage
                     </div>
                 </div>
 
+                <!-- RevOps Project 3 -->
+                <div class="card-elevated rounded-xl p-8 cursor-pointer group flex flex-col" onclick="openModal('modal-project3')">
+                    <div class="mb-4 p-3 bg-blue-100 dark:bg-blue-900/30 w-fit rounded-lg text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg></div>
+                    <h3 class="text-lg font-bold text-text-primary dark:text-white mb-2 group-hover:text-primary transition-colors">Sales Efficiency Optimization</h3>
+                    <p class="text-sm text-text-secondary dark:text-text-inverseSecondary mb-4 flex-grow">Automated admin tasks (CPQ, Auto-logging) to reclaim 12 hours/week per rep for selling.</p>
+                    <div class="pt-4 border-t border-gray-100 dark:border-gray-800 text-sm font-semibold text-primary">
+                        Result: +86% Selling Time
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills & Tools (Soft Gray) -->
-    <section class="py-section-mobile md:py-section-desktop px-6 bg-bg-gray dark:bg-bg-dark transition-colors">
+    <!-- Technical Skills -->
+    <section id="skills" class="py-section-mobile md:py-section-desktop px-6 bg-bg-gray dark:bg-bg-dark transition-colors">
         <div class="max-w-[1000px] mx-auto">
-            <h2 class="text-[32px] md:text-[48px] font-bold mb-12 text-text-primary dark:text-white text-center">Skills & Tools</h2>
+            <h2 class="text-[32px] md:text-[48px] font-bold mb-12 text-text-primary dark:text-white section-heading">Technical Skills</h2>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <!-- Sales Skills -->
-                <div class="bg-white dark:bg-bg-darkSec p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-                    <h3 class="text-xl font-bold mb-6 text-text-primary dark:text-white">Sales Expertise</h3>
-                    <ul class="space-y-4 text-text-secondary dark:text-text-inverseSecondary text-lg">
-                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>New Business Development</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Greenfield Market Expansion</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Pipeline Management & Forecasting</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Consultative / Value-Based Selling</li>
-                        <li class="flex items-center"><svg class="w-5 h-5 text-primary mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Multi-Stakeholder Negotiation</li>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- CRM -->
+                <div class="bg-white dark:bg-bg-darkSec p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-4 text-primary">CRM Platforms</h3>
+                    <ul class="space-y-2 text-sm text-text-secondary dark:text-text-inverseSecondary">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>Experience with Salesforce</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>Experience with HubSpot</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>Flow Builder Automation</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-primary rounded-full mr-2"></span>CPQ Configuration</li>
                     </ul>
                 </div>
-                
-                <!-- Tech Tools -->
-                <div class="bg-white dark:bg-bg-darkSec p-8 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-800">
-                    <h3 class="text-xl font-bold mb-6 text-text-primary dark:text-white">Technology & Languages</h3>
-                    <div class="mb-8">
-                        <h4 class="font-semibold text-text-primary dark:text-white mb-4 uppercase text-sm tracking-widest text-gray-400">Stack</h4>
-                        <ul class="space-y-4 text-text-secondary dark:text-text-inverseSecondary text-lg">
-                            <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-secondary mr-3"></span>Salesforce (Certified AI Specialist)</li>
-                            <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-secondary mr-3"></span>HubSpot CRM</li>
-                            <li class="flex items-center"><span class="w-2 h-2 rounded-full bg-secondary mr-3"></span>LinkedIn Sales Navigator & ZoomInfo</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 class="font-semibold text-text-primary dark:text-white mb-4 uppercase text-sm tracking-widest text-gray-400">Languages</h4>
-                        <ul class="space-y-2 text-text-secondary dark:text-text-inverseSecondary">
-                            <li>English (Native)</li>
-                            <li>Hindi (Native)</li>
-                            <li class="flex items-center text-primary font-medium mt-2">
-                                <span class="w-2 h-2 rounded-full bg-primary mr-2"></span>
-                                Finnish (A1 - Basics / Actively Studying)
-                            </li>
-                        </ul>
-                    </div>
+
+                <!-- Data & Analytics -->
+                <div class="bg-white dark:bg-bg-darkSec p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-4 text-secondary">Data & Analytics</h3>
+                    <ul class="space-y-2 text-sm text-text-secondary dark:text-text-inverseSecondary">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2"></span>Excel (Advanced)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2"></span>Salesforce Dashboards</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2"></span>SQL (Intermediate)</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-secondary rounded-full mr-2"></span>Revenue Forecasting</li>
+                    </ul>
+                </div>
+
+                <!-- Integrations -->
+                <div class="bg-white dark:bg-bg-darkSec p-6 rounded-xl border border-gray-100 dark:border-gray-700">
+                    <h3 class="font-bold text-lg mb-4 text-purple-600">Stack & Tools</h3>
+                    <ul class="space-y-2 text-sm text-text-secondary dark:text-text-inverseSecondary">
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>LinkedIn Sales Nav</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>ZoomInfo</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>DocuSign / PandaDoc</li>
+                        <li class="flex items-center"><span class="w-1.5 h-1.5 bg-purple-600 rounded-full mr-2"></span>Outreach.io</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- References Placeholder -->
-    <section class="py-20 px-6 bg-white dark:bg-bg-darkSec transition-colors border-y border-gray-100 dark:border-gray-800">
-        <div class="max-w-[800px] mx-auto text-center">
-            <h2 class="text-2xl font-bold mb-4 text-text-primary dark:text-white">Professional References</h2>
-            <p class="text-text-secondary dark:text-text-inverseSecondary mb-8 text-lg">
-                Available upon request. I can provide detailed contact information for former managers and clients who can attest to my sales performance and consultative approach.
-            </p>
-            <div class="inline-block px-8 py-4 bg-gray-50 dark:bg-gray-800 rounded-full border border-gray-200 dark:border-gray-700 italic text-text-secondary dark:text-text-inverseSecondary font-medium">
-                "Strategic execution meets operational rigor—delivering predictable growth in complex markets."
-            </div>
+    <!-- Footer / Contact -->
+    <section id="contact" class="py-20 px-6 bg-white dark:bg-bg-dark text-center">
+        <h2 class="text-3xl font-bold mb-6 text-text-primary dark:text-white">Ready to fix your revenue engine?</h2>
+        <p class="mb-10 text-text-secondary dark:text-text-inverseSecondary max-w-xl mx-auto">
+            If your sales team is drowning in admin, your forecast is a guess, and your CRM is a mess—let's talk.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="mailto:dhruvshah9197@gmail.com" class="px-8 py-4 bg-primary text-white rounded-xl font-bold hover:bg-blue-700 transition">Email Me</a>
+            <a href="https://www.linkedin.com/in/dhruvin-s-459197ab/" target="_blank" class="px-8 py-4 bg-gray-50 dark:bg-bg-darkSec border border-gray-200 dark:border-gray-700 rounded-xl font-bold hover:border-primary transition">LinkedIn</a>
+        </div>
+        <div class="mt-16 text-sm text-gray-400">
+            © 2026 Dhruvin Shah
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-section-mobile md:py-section-desktop px-6 bg-bg-gray dark:bg-bg-dark transition-colors">
-        <div class="max-w-[600px] mx-auto text-center">
-            <h2 class="text-[32px] md:text-[48px] font-bold mb-6 text-text-primary dark:text-white section-heading">Let's Talk</h2>
-            <p class="text-text-secondary dark:text-text-inverseSecondary mb-12 text-xl">
-                Interested in discussing new business opportunities? I'm currently based in Helsinki and open to roles across Finland.
-            </p>
-
-            <div class="space-y-6">
-                <a href="mailto:dhruvshah9197@gmail.com" class="block w-full p-5 rounded-xl bg-primary text-white font-bold text-xl hover:bg-blue-700 transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-1">
-                    dhruvshah9197@gmail.com
-                </a>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="tel:+358466658714" class="px-8 py-4 rounded-xl bg-white dark:bg-bg-darkSec border border-gray-200 dark:border-gray-700 text-text-secondary dark:text-text-inverseSecondary font-medium hover:border-primary hover:text-primary transition-all duration-200 shadow-sm">
-                        +358 466 658 714
-                    </a>
-                    <a href="https://www.linkedin.com/in/dhruvin-s-459197ab/" target="_blank" rel="noopener noreferrer" class="px-8 py-4 rounded-xl bg-white dark:bg-bg-darkSec border border-gray-200 dark:border-gray-700 text-text-secondary dark:text-text-inverseSecondary font-medium hover:border-primary hover:text-primary transition-all duration-200 shadow-sm flex items-center justify-center">
-                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        LinkedIn Profile
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 px-6 bg-white dark:bg-bg-darkSec text-text-secondary dark:text-text-inverseSecondary border-t border-gray-200 dark:border-gray-800">
-        <div class="max-w-[1200px] mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <div class="text-sm">
-                © 2026 Dhruvin Shah | Senior Sales Executive
-            </div>
-            <div class="flex items-center gap-8 text-sm font-medium">
-                <a href="#" class="hover:text-primary transition-colors animated-link">Download CV</a>
-                <a href="mailto:dhruvshah9197@gmail.com" class="hover:text-primary transition-colors animated-link">Contact</a>
-            </div>
-            <div class="text-xs text-gray-400">
-                Built with Nordic Minimalism | Helsinki, Finland
-            </div>
-        </div>
-    </footer>
-
-    <!-- MODALS -->
-
-    <!-- Modal 1: National Guard -->
+    <!-- MODALS (Hidden by default, triggered by JS) -->
+    
+    <!-- Modal: Sales Project 1 (National Guard) -->
     <div id="modal-guard" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-guard')">
-        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()">
-            <button onclick="closeModal('modal-guard')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white p-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <span class="text-primary font-mono text-sm uppercase tracking-wider mb-2 block">Government / Defense</span>
+        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-guard')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <span class="text-secondary font-mono text-sm uppercase tracking-wider mb-2 block">Sales Win</span>
             <h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white">US National Guard Contract</h2>
             <div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed text-lg">
                 <div>
@@ -579,13 +445,11 @@
         </div>
     </div>
 
-    <!-- Modal 2: Expansion -->
+    <!-- Modal: Sales Project 2 (Expansion) -->
     <div id="modal-expansion" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-expansion')">
-        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagation()">
-            <button onclick="closeModal('modal-expansion')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white p-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <span class="text-primary font-mono text-sm uppercase tracking-wider mb-2 block">Scale & Operations</span>
+        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-expansion')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <span class="text-secondary font-mono text-sm uppercase tracking-wider mb-2 block">Sales Win</span>
             <h2 class="text-3xl font-bold mb-8 text-text-primary dark:text-white">14-State Territory Launch</h2>
             <div class="space-y-8 text-text-secondary dark:text-text-inverseSecondary leading-relaxed text-lg">
                 <div>
@@ -611,126 +475,71 @@
         </div>
     </div>
 
-    <!-- Modal 3: RevOps Excellence -->
-    <div id="modal-revops" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-revops')">
-        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[900px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 md:p-12 relative" onclick="event.stopPropagagation()">
-            <button onclick="closeModal('modal-revops')" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 dark:hover:text-white p-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
-            </button>
-            <span class="text-purple-600 font-mono text-sm uppercase tracking-wider mb-2 block">Technology & Process</span>
-            <h2 class="text-3xl font-bold mb-4 text-text-primary dark:text-white">RevOps Excellence</h2>
-            
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center border border-gray-100 dark:border-gray-700">
-                    <div class="text-2xl font-bold text-secondary">95%</div>
-                    <div class="text-xs uppercase mt-1">Forecast Accuracy</div>
-                </div>
-                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center border border-gray-100 dark:border-gray-700">
-                    <div class="text-2xl font-bold text-secondary">10+ Hrs</div>
-                    <div class="text-xs uppercase mt-1">Saved Weekly</div>
-                </div>
-                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center border border-gray-100 dark:border-gray-700">
-                    <div class="text-2xl font-bold text-secondary">92%</div>
-                    <div class="text-xs uppercase mt-1">Retention Rate</div>
-                </div>
-                <div class="bg-gray-50 dark:bg-gray-800 p-4 rounded-lg text-center border border-gray-100 dark:border-gray-700">
-                    <div class="text-2xl font-bold text-secondary">35%</div>
-                    <div class="text-xs uppercase mt-1">Upsell Rate</div>
+    <!-- Modal: RevOps Project 1 (Multi-State) -->
+    <div id="modal-project1" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-project1')">
+        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-project1')" class="absolute top-4 right-4 text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <span class="text-primary font-bold text-xs uppercase tracking-wider mb-2 block">RevOps Project</span>
+            <h2 class="text-2xl font-bold mb-6 text-text-primary dark:text-white">Multi-State Sales Process Architecture</h2>
+            <div class="prose dark:prose-invert max-w-none text-sm md:text-base text-text-secondary dark:text-text-inverseSecondary">
+                <p><strong>The Problem:</strong> Scaling from 12 to 70 reps across 14 states created chaos. Manual lead assignment took 48 hours, and compliance reviews were a "black box."</p>
+                <h3 class="font-bold text-text-primary dark:text-white mt-4">The Solution</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Smart Lead Router:</strong> Built Salesforce Flow to auto-assign leads based on rep licensing and capacity (time reduced: 48hrs → 5 mins).</li>
+                    <li><strong>Stage Locks:</strong> Implemented validation rules requiring specific fields before stage advancement.</li>
+                    <li><strong>Compliance SLA:</strong> Created automated timers and escalation paths for compliance review (time reduced: 12 days → 4.5 days).</li>
+                </ul>
+                <div class="mt-6 bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-100 dark:border-green-800">
+                    <strong class="text-green-700 dark:text-green-400">Result:</strong> 95% CRM adoption (up from 60%) and 3x better forecast accuracy.
                 </div>
             </div>
-            
-            <!-- Interactive Tabs -->
-            <div class="mb-8 border-b border-gray-200 dark:border-gray-700">
-                <div class="flex flex-wrap gap-4 md:gap-8" role="tablist">
-                    <button class="tab-btn active pb-3 border-b-2 border-primary text-primary font-medium transition-colors" onclick="switchTab('prospecting', this)">1. Prospecting</button>
-                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium transition-colors" onclick="switchTab('discovery', this)">2. Discovery</button>
-                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium transition-colors" onclick="switchTab('closing', this)">3. Closing</button>
-                    <button class="tab-btn pb-3 border-b-2 border-transparent text-text-secondary hover:text-primary font-medium transition-colors" onclick="switchTab('handoff', this)">4. Handoff</button>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <!-- Tab Content: Prospecting -->
-            <div id="prospecting" class="tab-content block animate-fade-in">
-                <div class="flex flex-col md:flex-row gap-8">
-                    <div class="flex-1 space-y-4 text-text-secondary dark:text-text-inverseSecondary">
-                        <ul class="space-y-3 list-disc list-inside">
-                            <li><strong>Account Research:</strong> Used <span class="text-primary font-medium">LinkedIn Sales Navigator</span> to identify decision-makers in 200+ high-fit mid-market accounts.</li>
-                            <li><strong>Enrichment:</strong> Leveraged <span class="text-primary font-medium">ZoomInfo</span> for direct dials, achieving 60% contact accuracy.</li>
-                            <li><strong>Cadence:</strong> Executed multi-channel outreach logged automatically in <span class="text-primary font-medium">Salesforce</span>.</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
-                        <div class="space-y-2 text-sm font-medium dark:text-white">
-                            <div class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>LinkedIn Sales Nav</div>
-                            <div class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>ZoomInfo</div>
-                            <div class="flex items-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>Salesforce CRM</div>
-                        </div>
-                    </div>
+    <!-- Modal: RevOps Project 2 (Interlock) -->
+    <div id="modal-project2" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-project2')">
+        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-project2')" class="absolute top-4 right-4 text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <span class="text-primary font-bold text-xs uppercase tracking-wider mb-2 block">RevOps Project</span>
+            <h2 class="text-2xl font-bold mb-6 text-text-primary dark:text-white">Revenue Interlock Framework</h2>
+            <div class="prose dark:prose-invert max-w-none text-sm md:text-base text-text-secondary dark:text-text-inverseSecondary">
+                <p><strong>The Problem:</strong> Marketing and Sales were misaligned on "qualified" leads, causing finger-pointing and missed targets.</p>
+                <h3 class="font-bold text-text-primary dark:text-white mt-4">The Solution</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Unified Definitions:</strong> Facilitated workshops to define MQL, SQL, and SAL criteria shared by all teams.</li>
+                    <li><strong>Feedback Loop:</strong> Built "Closed-Lost Reason" automation that feeds data back to Marketing in real-time.</li>
+                    <li><strong>Weekly Interlock:</strong> Established a standing meeting reviewing a single "Source of Truth" dashboard.</li>
+                </ul>
+                <div class="mt-6 bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-100 dark:border-green-800">
+                    <strong class="text-green-700 dark:text-green-400">Result:</strong> +52% Pipeline Coverage and eliminated "where's my lead" support tickets.
                 </div>
             </div>
-            
-            <!-- Other tab contents remain similar structure (hidden by default) -->
-            <div id="discovery" class="tab-content hidden animate-fade-in">
-                 <div class="flex flex-col md:flex-row gap-8">
-                    <div class="flex-1 space-y-4 text-text-secondary dark:text-text-inverseSecondary">
-                        <ul class="space-y-3 list-disc list-inside">
-                            <li><strong>Framework:</strong> Utilized <span class="text-primary font-medium">MEDDIC + BANT</span> hybrid to qualify budget and authority.</li>
-                            <li><strong>Forecasting:</strong> Immediate opportunity creation in Salesforce with probability weighting.</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
-                        <div class="space-y-2 text-sm font-medium dark:text-white">
-                            <div class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>Zoom / Teams</div>
-                            <div class="flex items-center"><span class="w-2 h-2 bg-indigo-500 rounded-full mr-2"></span>Salesforce Notes</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+    </div>
 
-            <div id="closing" class="tab-content hidden animate-fade-in">
-                 <div class="flex flex-col md:flex-row gap-8">
-                    <div class="flex-1 space-y-4 text-text-secondary dark:text-text-inverseSecondary">
-                        <ul class="space-y-3 list-disc list-inside">
-                            <li><strong>Proposal:</strong> Generated formal quotes in Salesforce with automated approval routing.</li>
-                            <li><strong>Execution:</strong> Managed e-signatures via <span class="text-primary font-medium">DocuSign</span>, reducing admin time by 3 days.</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
-                        <div class="space-y-2 text-sm font-medium dark:text-white">
-                            <div class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>DocuSign</div>
-                            <div class="flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span>Salesforce Quotes</div>
-                        </div>
-                    </div>
+    <!-- Modal: RevOps Project 3 (Efficiency) -->
+    <div id="modal-project3" class="modal hidden fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/60 backdrop-blur-md" onclick="closeModal('modal-project3')">
+        <div class="modal-content bg-white dark:bg-bg-darkSec w-full max-w-[800px] max-h-[90vh] overflow-y-auto rounded-2xl shadow-2xl p-8 relative" onclick="event.stopPropagation()">
+            <button onclick="closeModal('modal-project3')" class="absolute top-4 right-4 text-gray-400 hover:text-primary"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <span class="text-primary font-bold text-xs uppercase tracking-wider mb-2 block">RevOps Project</span>
+            <h2 class="text-2xl font-bold mb-6 text-text-primary dark:text-white">Sales Efficiency Optimization</h2>
+            <div class="prose dark:prose-invert max-w-none text-sm md:text-base text-text-secondary dark:text-text-inverseSecondary">
+                <p><strong>The Problem:</strong> Time studies revealed reps spent only 35% of their week actually selling. Admin was killing productivity.</p>
+                <h3 class="font-bold text-text-primary dark:text-white mt-4">The Solution</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li><strong>Einstein Activity Capture:</strong> Auto-logged emails/meetings to remove manual data entry (saved 3.5 hrs/week).</li>
+                    <li><strong>CPQ Implementation:</strong> Built one-click proposal generation (saved 3 hrs/week).</li>
+                    <li><strong>Automated Alerts:</strong> Replaced "status update" emails with dashboard visibility.</li>
+                </ul>
+                <div class="mt-6 bg-green-50 dark:bg-green-900/20 p-4 rounded-lg border border-green-100 dark:border-green-800">
+                    <strong class="text-green-700 dark:text-green-400">Result:</strong> Selling time increased to 65%. Deal closure per rep increased 57%.
                 </div>
             </div>
-
-            <div id="handoff" class="tab-content hidden animate-fade-in">
-                 <div class="flex flex-col md:flex-row gap-8">
-                    <div class="flex-1 space-y-4 text-text-secondary dark:text-text-inverseSecondary">
-                        <ul class="space-y-3 list-disc list-inside">
-                            <li><strong>Structure:</strong> Conducted formal 30-minute handoff calls with CS team.</li>
-                            <li><strong>Documentation:</strong> Uploaded signed contracts to Salesforce files for single-source-of-truth.</li>
-                        </ul>
-                    </div>
-                    <div class="w-full md:w-1/3 bg-gray-50 dark:bg-gray-800 p-6 rounded-xl border border-gray-100 dark:border-gray-700">
-                        <h4 class="text-xs font-bold uppercase text-gray-400 mb-4">Tech Stack</h4>
-                        <div class="space-y-2 text-sm font-medium dark:text-white">
-                            <div class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>Salesforce Files</div>
-                            <div class="flex items-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span>CS Platform</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
     <!-- Scripts -->
     <script>
-        // Modal Logic
         function openModal(modalId) {
             const modal = document.getElementById(modalId);
             modal.classList.remove('hidden');
@@ -752,24 +561,6 @@
             }
         });
 
-        // Tab Switcher Logic
-        function switchTab(tabId, btnElement) {
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.add('hidden');
-                content.classList.remove('block');
-            });
-            const selectedTab = document.getElementById(tabId);
-            selectedTab.classList.remove('hidden');
-            selectedTab.classList.add('block');
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active', 'border-primary', 'text-primary');
-                btn.classList.add('border-transparent', 'text-text-secondary');
-            });
-            btnElement.classList.remove('border-transparent', 'text-text-secondary');
-            btnElement.classList.add('active', 'border-primary', 'text-primary');
-        }
-
-        // Dark Mode Logic
         const themeToggle = document.getElementById('theme-toggle');
         const html = document.documentElement;
 
